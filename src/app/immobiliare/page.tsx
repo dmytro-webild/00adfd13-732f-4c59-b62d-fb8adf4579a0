@@ -1,0 +1,133 @@
+"use client";
+
+import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
+import ReactLenis from "lenis/react";
+import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
+import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
+import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
+
+export default function LandingPage() {
+  return (
+    <ThemeProvider
+        defaultButtonVariant="bounce-effect"
+        defaultTextAnimation="reveal-blur"
+        borderRadius="rounded"
+        contentWidth="compact"
+        sizing="largeSmallSizeMediumTitles"
+        background="grid"
+        cardStyle="soft-shadow"
+        primaryButtonStyle="flat"
+        secondaryButtonStyle="radial-glow"
+        headingFontWeight="medium"
+    >
+      <ReactLenis root>
+  <div id="nav" data-section="nav">
+      <NavbarStyleApple
+      navItems={[
+        {
+          name: "Home",
+          id: "/",
+        },
+        {
+          name: "Chi Siamo",
+          id: "/#chi-siamo",
+        },
+        {
+          name: "Immobiliare",
+          id: "/immobiliare",
+        },
+        {
+          name: "Contatti",
+          id: "/#contatti",
+        },
+      ]}
+      brandName="SBR Consulting"
+    />
+  </div>
+
+  <div id="immobiliare-hero" data-section="immobiliare-hero">
+      <FeatureCardSeven
+      animationType="slide-up"
+      textboxLayout="split"
+      useInvertedBackground={false}
+      features={[
+        {
+          title: "Valutazioni immobiliari",
+          description: "Analisi oggettiva del valore di mercato per operazioni di successo.",
+          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/a-professional-financial-consultant-work-1777989688433-4106cf18.png",
+          imageAlt: "Valutazioni",
+        },
+        {
+          title: "Ottimizzazione asset",
+          description: "Strategie per incrementare la redditività dei tuoi immobili.",
+          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/a-professional-financial-consultant-work-1777989699432-82b68695.png",
+          imageAlt: "Asset",
+        },
+      ]}
+      title="Divisione Immobiliare"
+      description="Servizi di consulenza specialistica per il settore Real Estate. Massima competenza tecnica e finanziaria."
+    />
+  </div>
+
+  <div id="feature" data-section="feature">
+      <FeatureCardSeven
+      animationType="slide-up"
+      textboxLayout="default"
+      useInvertedBackground={false}
+      title="Supporto Strategico Real Estate"
+      description="Affianchiamo investitori e aziende nella valorizzazione degli asset immobiliari attraverso analisi rigorose."
+      features={[
+        {
+          title: "Analisi di portafoglio",
+          description: "Ottimizziamo il rendimento dei tuoi immobili attraverso una revisione strategica.",
+          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/a-professional-financial-consultant-work-1777989688433-4106cf18.png",
+          imageAlt: "Analisi",
+        },
+        {
+          title: "Audit tecnico",
+          description: "Verifica tecnica approfondita per massimizzare la sicurezza delle operazioni.",
+          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/a-professional-financial-consultant-work-1777989699432-82b68695.png",
+          imageAlt: "Audit",
+        },
+      ]}
+    />
+  </div>
+
+  <div id="footer" data-section="footer">
+      <FooterBaseReveal
+      logoText="SBR Consulting"
+      columns={[
+        {
+          title: "Servizi",
+          items: [
+            {
+              label: "Cessione Credito",
+              href: "#",
+            },
+            {
+              label: "Consulenza",
+              href: "#",
+            },
+          ],
+        },
+        {
+          title: "Azienda",
+          items: [
+            {
+              label: "Chi Siamo",
+              href: "#chi-siamo",
+            },
+            {
+              label: "Contatti",
+              href: "#contatti",
+            },
+          ],
+        },
+      ]}
+      copyrightText="© 2024 SBR Consulting. Tutti i diritti riservati."
+    />
+  </div>
+      </ReactLenis>
+    </ThemeProvider>
+  );
+}
