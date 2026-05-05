@@ -49,6 +49,7 @@ export default function LandingPage() {
       buttons={[
         { text: "Richiedi Consulenza", href: "#contatti" },
       ]}
+      background={{ variant: "gradient-bars" }}
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/modern-high-end-architectural-detail-cle-1777989649870-d9a73473.png?_wi=1"
       imageAlt="Ufficio SBR Consulting"
       mediaAnimation="slide-up"
