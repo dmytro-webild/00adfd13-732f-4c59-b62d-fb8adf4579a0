@@ -45,7 +45,7 @@ export default function LandingPage() {
   <div id="hero" data-section="hero">
       <HeroLogo
       logoText="SBR Consulting"
-      description="Consulenza finanziaria di alto profilo per la cessione del credito. Eccellenza, riservatezza e risultati misurabili per la tua crescita."
+      description="Consulenza finanziaria di alto profilo per la cessione del credito. Eccellenza, serietà e risultati misurabili per la tua crescita."
       buttons={[
         {
           text: "Richiedi Consulenza",          href: "#contatti"},
