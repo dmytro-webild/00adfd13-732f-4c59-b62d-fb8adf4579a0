@@ -2,9 +2,9 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import HeroLogo from '@/components/sections/hero/HeroLogo';
-import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
+import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSplitTextAbout';
+import FeatureCardMedia from '@/components/sections/feature/FeatureCardMedia';
 
 export default function ImmobiliarePage() {
   return (
@@ -33,31 +33,27 @@ export default function ImmobiliarePage() {
           />
         </div>
 
-        <div id="hero" data-section="hero">
-          <HeroLogo
-            logoText="Divisione Immobiliare"
-            description="Servizi di consulenza specialistica per il settore Real Estate, con approccio minimale e orientato ai risultati."
-            buttons={[{ text: "Contattaci", href: "/#contatti" }]}
-            imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/modern-high-end-architectural-detail-cle-1777989649870-d9a73473.png?_wi=1"
+        <div id="chi-siamo" data-section="chi-siamo">
+          <InlineImageSplitTextAbout 
+            heading={[{ type: 'text', content: 'Eccellenza nell\'Immobiliare' }]}
+            useInvertedBackground={false}
+            ariaLabel="About section"
           />
         </div>
 
         <div id="servizi" data-section="servizi">
-          <FeatureCardSeven
+          <FeatureCardMedia
             animationType="slide-up"
-            textboxLayout="default"
-            useInvertedBackground={false}
-            title="I Nostri Servizi"
-            description="Soluzioni professionali per la gestione e valorizzazione del patrimonio immobiliare."
+            textboxLayout="split"
+            useInvertedBackground={true}
+            title="Servizi Immobiliari"
+            description="Offriamo soluzioni su misura per il tuo patrimonio immobiliare."
             features={[
               {
-                title: "Valutazione Immobiliare",                description: "Analisi accurata del valore di mercato basata su dati oggettivi e tecnici."
+                id: "1",                title: "Valutazioni di Mercato",                description: "Analisi tecniche precise per determinare il reale valore del tuo asset.",                tag: "Valutazione"
               },
               {
-                title: "Ottimizzazione Asset",                description: "Strategie mirate per accrescere la redditività dei tuoi asset immobiliari."
-              },
-              {
-                title: "Audit Tecnico",                description: "Verifica approfondita per garantire conformità e sicurezza in ogni transazione."
+                id: "2",                title: "Gestione Asset",                description: "Strategie avanzate per massimizzare il rendimento dei tuoi investimenti.",                tag: "Asset"
               }
             ]}
           />
