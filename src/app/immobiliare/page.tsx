@@ -3,7 +3,7 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
-import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
+import FooterMedia from '@/components/sections/footer/FooterMedia';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import FaqDouble from '@/components/sections/faq/FaqDouble';
 
@@ -86,8 +86,9 @@ export default function LandingPage() {
   </div>
 
   <div id="footer" data-section="footer">
-      <FooterBaseReveal
+      <FooterMedia
       logoText="SBR Consulting"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/modern-high-end-architectural-detail-cle-1777989649870-d9a73473.png?_wi=1"
       columns={[
         {
           title: "Servizi",          items: [
@@ -100,9 +101,9 @@ export default function LandingPage() {
         {
           title: "Azienda",          items: [
             {
-              label: "Chi Siamo",              href: "#chi-siamo"},
+              label: "Chi Siamo",              href: "/#chi-siamo"},
             {
-              label: "Contatti",              href: "#contatti"},
+              label: "Contatti",              href: "/#contatti"},
           ],
         },
       ]}
