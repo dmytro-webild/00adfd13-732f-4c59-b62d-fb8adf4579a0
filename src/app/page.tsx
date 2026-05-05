@@ -133,7 +133,7 @@ export default function LandingPage() {
       background={{
         variant: "gradient-bars"}}
       tag="Contatti"
-      title="Richiedi un'analisi gratuita"
+      title="Richiedi una consulenza gratuita"
       description="Prenota una sessione conoscitiva con uno dei nostri esperti. Trasforma i tuoi crediti in valore immediato."
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/modern-high-end-architectural-detail-cle-1777989649870-d9a73473.png?_wi=2"
       mediaAnimation="slide-up"
