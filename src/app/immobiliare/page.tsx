@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import HeroSplit from '@/components/sections/hero/HeroSplit';
+import HeroLogo from '@/components/sections/hero/HeroLogo';
 import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 
@@ -34,13 +34,11 @@ export default function ImmobiliarePage() {
         </div>
 
         <div id="hero" data-section="hero">
-          <HeroSplit
-            title="Divisione Immobiliare"
+          <HeroLogo
+            logoText="Divisione Immobiliare"
             description="Servizi di consulenza specialistica per il settore Real Estate, con approccio minimale e orientato ai risultati."
             buttons={[{ text: "Contattaci", href: "/#contatti" }]}
-            background={{ variant: "gradient-bars" }}
             imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/modern-high-end-architectural-detail-cle-1777989649870-d9a73473.png?_wi=1"
-            mediaAnimation="slide-up"
           />
         </div>
 
