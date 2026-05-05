@@ -83,7 +83,7 @@ export default function LandingPage() {
           title: "Clienti soddisfatti",
         },
       ]}
-      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/a-professional-financial-consultant-work-1777989590612-19e04056.png"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/uploaded-1777990331589-yhm73r4m.png"
       mediaAnimation="slide-up"
       metricsAnimation="slide-up"
     />
@@ -98,7 +98,7 @@ export default function LandingPage() {
         {
           title: "Analisi del credito",
           description: "Valutazione tecnica dettagliata per identificare le migliori opportunità.",
-          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/luxury-financial-consulting-office-minim-1777989659949-7058b368.png",
+          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/professional-document-inspection-archite-1777989722562-4aaf17cf.png",
           imageAlt: "Analisi",
         },
         {
