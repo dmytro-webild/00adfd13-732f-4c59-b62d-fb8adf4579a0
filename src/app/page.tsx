@@ -101,7 +101,7 @@ export default function LandingPage() {
         useInvertedBackground={false}
         faqs={[
           {
-            id: "1",            title: "Come richiedere una consulenza?",            content: "Puoi contattarci compilando il modulo presente in fondo alla pagina o fissando un appuntamento diretto."
+            id: "1",            title: "A chi si rivolge SBR Consulting?",            content: "Puoi contattarci compilando il modulo presente in fondo alla pagina o fissando un appuntamento diretto."
           },
           {
             id: "2",            title: "Quali sono le tempistiche medie?",            content: "Le tempistiche variano in base alla tipologia di pratica, ma puntiamo sempre all'efficienza massima."
