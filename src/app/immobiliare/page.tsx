@@ -5,6 +5,7 @@ import ReactLenis from "lenis/react";
 import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
+import FaqDouble from '@/components/sections/faq/FaqDouble';
 
 export default function LandingPage() {
   return (
@@ -25,21 +26,13 @@ export default function LandingPage() {
       <NavbarStyleApple
       navItems={[
         {
-          name: "Home",
-          id: "/",
-        },
+          name: "Home",          id: "/"},
         {
-          name: "Chi Siamo",
-          id: "/#chi-siamo",
-        },
+          name: "Chi Siamo",          id: "/#chi-siamo"},
         {
-          name: "Immobiliare",
-          id: "/immobiliare",
-        },
+          name: "Immobiliare",          id: "/immobiliare"},
         {
-          name: "Contatti",
-          id: "/#contatti",
-        },
+          name: "Contatti",          id: "/#contatti"},
       ]}
       brandName="SBR Consulting"
     />
@@ -52,21 +45,28 @@ export default function LandingPage() {
       useInvertedBackground={false}
       features={[
         {
-          title: "Valutazioni immobiliari",
-          description: "Analisi oggettiva del valore di mercato per operazioni di successo.",
-          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/a-professional-financial-consultant-work-1777989688433-4106cf18.png?_wi=1",
-          imageAlt: "Valutazioni",
-        },
+          title: "Valutazioni immobiliari",          description: "Analisi oggettiva del valore di mercato per operazioni di successo.",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/a-professional-financial-consultant-work-1777989688433-4106cf18.png?_wi=1",          imageAlt: "Valutazioni"},
         {
-          title: "Ottimizzazione asset",
-          description: "Strategie per incrementare la redditività dei tuoi immobili.",
-          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/a-professional-financial-consultant-work-1777989699432-82b68695.png?_wi=1",
-          imageAlt: "Asset",
-        },
+          title: "Ottimizzazione asset",          description: "Strategie per incrementare la redditività dei tuoi immobili.",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/a-professional-financial-consultant-work-1777989699432-82b68695.png?_wi=1",          imageAlt: "Asset"},
       ]}
       title="Divisione Immobiliare"
       description="Servizi di consulenza specialistica per il settore Real Estate. Massima competenza tecnica e finanziaria."
     />
+  </div>
+
+  <div id="faq" data-section="faq">
+      <FaqDouble
+        title="Domande frequenti Immobiliare"
+        description="Scopri di più sui nostri servizi immobiliari."
+        faqsAnimation="slide-up"
+        textboxLayout="default"
+        useInvertedBackground={false}
+        faqs={[
+          {
+            id: "1",            title: "Come valutiamo un immobile?",            content: "Utilizziamo metodi di analisi di mercato comparativi e tecnici per una stima precisa."
+          }
+        ]}
+      />
   </div>
 
   <div id="feature" data-section="feature">
@@ -78,17 +78,9 @@ export default function LandingPage() {
       description="Affianchiamo investitori e aziende nella valorizzazione degli asset immobiliari attraverso analisi rigorose."
       features={[
         {
-          title: "Analisi di portafoglio",
-          description: "Ottimizziamo il rendimento dei tuoi immobili attraverso una revisione strategica.",
-          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/a-professional-financial-consultant-work-1777989688433-4106cf18.png?_wi=2",
-          imageAlt: "Analisi",
-        },
+          title: "Analisi di portafoglio",          description: "Ottimizziamo il rendimento dei tuoi immobili attraverso una revisione strategica.",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/a-professional-financial-consultant-work-1777989688433-4106cf18.png?_wi=2",          imageAlt: "Analisi"},
         {
-          title: "Audit tecnico",
-          description: "Verifica tecnica approfondita per massimizzare la sicurezza delle operazioni.",
-          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/a-professional-financial-consultant-work-1777989699432-82b68695.png?_wi=2",
-          imageAlt: "Audit",
-        },
+          title: "Audit tecnico",          description: "Verifica tecnica approfondita per massimizzare la sicurezza delle operazioni.",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/a-professional-financial-consultant-work-1777989699432-82b68695.png?_wi=2",          imageAlt: "Audit"},
       ]}
     />
   </div>
@@ -98,29 +90,19 @@ export default function LandingPage() {
       logoText="SBR Consulting"
       columns={[
         {
-          title: "Servizi",
-          items: [
+          title: "Servizi",          items: [
             {
-              label: "Cessione Credito",
-              href: "#",
-            },
+              label: "Cessione Credito",              href: "#"},
             {
-              label: "Consulenza",
-              href: "#",
-            },
+              label: "Consulenza",              href: "#"},
           ],
         },
         {
-          title: "Azienda",
-          items: [
+          title: "Azienda",          items: [
             {
-              label: "Chi Siamo",
-              href: "#chi-siamo",
-            },
+              label: "Chi Siamo",              href: "#chi-siamo"},
             {
-              label: "Contatti",
-              href: "#contatti",
-            },
+              label: "Contatti",              href: "#contatti"},
           ],
         },
       ]}
