@@ -104,7 +104,7 @@ export default function LandingPage() {
             id: "1",            title: "A chi si rivolge SBR Consulting?",            content: "Ci rivolgiamo a imprese edili, investitori immobiliari e aziende che necessitano di supporto nella gestione finanziaria o nello sviluppo di operazioni complesse."
           },
           {
-            id: "2",            title: "Quali sono le tempistiche medie?",            content: "Le tempistiche variano in base alla tipologia di pratica, ma puntiamo sempre all'efficienza massima."
+            id: "2",            title: "In quanto tempo si conclude una cessione del credito?",            content: "Le tempistiche variano in base alla tipologia di pratica, ma puntiamo sempre all'efficienza massima."
           }
         ]}
       />
