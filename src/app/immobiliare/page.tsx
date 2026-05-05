@@ -54,13 +54,13 @@ export default function LandingPage() {
         {
           title: "Valutazioni immobiliari",
           description: "Analisi oggettiva del valore di mercato per operazioni di successo.",
-          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/a-professional-financial-consultant-work-1777989688433-4106cf18.png",
+          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/a-professional-financial-consultant-work-1777989688433-4106cf18.png?_wi=1",
           imageAlt: "Valutazioni",
         },
         {
           title: "Ottimizzazione asset",
           description: "Strategie per incrementare la redditività dei tuoi immobili.",
-          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/a-professional-financial-consultant-work-1777989699432-82b68695.png",
+          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/a-professional-financial-consultant-work-1777989699432-82b68695.png?_wi=1",
           imageAlt: "Asset",
         },
       ]}
@@ -80,13 +80,13 @@ export default function LandingPage() {
         {
           title: "Analisi di portafoglio",
           description: "Ottimizziamo il rendimento dei tuoi immobili attraverso una revisione strategica.",
-          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/a-professional-financial-consultant-work-1777989688433-4106cf18.png",
+          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/a-professional-financial-consultant-work-1777989688433-4106cf18.png?_wi=2",
           imageAlt: "Analisi",
         },
         {
           title: "Audit tecnico",
           description: "Verifica tecnica approfondita per massimizzare la sicurezza delle operazioni.",
-          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/a-professional-financial-consultant-work-1777989699432-82b68695.png",
+          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/a-professional-financial-consultant-work-1777989699432-82b68695.png?_wi=2",
           imageAlt: "Audit",
         },
       ]}
