@@ -85,7 +85,7 @@ export default function LandingPage() {
         {
           title: "Advisory Finanziaria per imprese",          description: "Supportiamo aziende nell’accesso al credito, nella gestione della liquidità e nella strutturazione finanziaria di progetti complessi. Costruiamo soluzioni su misura per crescita e stabilità nel tempo.",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/luxury-financial-consulting-office-minim-1777989669409-6b1973a5.png",          imageAlt: "Gestione"},
         {
-          title: "Gestione Documentale e processi",          description: "Garantiamo il pieno rispetto di tutte le normative vigenti per operazioni sicure.",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/luxury-financial-consulting-office-minim-1777989678468-9a606ec6.png",          imageAlt: "Compliance"},
+          title: "Gestione Documentale e processi",          description: "Digitalizziamo e ottimizziamo i flussi documentali legati a pratiche finanziarie e immobiliari, riducendo errori e accelerando le tempistiche operative.",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/luxury-financial-consulting-office-minim-1777989678468-9a606ec6.png",          imageAlt: "Compliance"},
       ]}
       title="La nostra consulenza"
       description="Soluzioni personalizzate per la gestione e la cessione del credito, pensate per massimizzare il tuo vantaggio competitivo."
