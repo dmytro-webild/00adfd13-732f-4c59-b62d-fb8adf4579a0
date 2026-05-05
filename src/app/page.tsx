@@ -5,7 +5,7 @@ import ReactLenis from "lenis/react";
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
-import HeroSplit from '@/components/sections/hero/HeroSplit';
+import HeroLogo from '@/components/sections/hero/HeroLogo';
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import TestimonialCardTwelve from '@/components/sections/testimonial/TestimonialCardTwelve';
@@ -43,16 +43,15 @@ export default function LandingPage() {
   </div>
 
   <div id="hero" data-section="hero">
-      <HeroSplit
-      title="SBR Consulting"
+      <HeroLogo
+      logoText="SBR Consulting"
       description="Consulenza finanziaria di alto profilo per la cessione del credito. Eccellenza, serietà e risultati misurabili per la tua crescita."
       buttons={[
-        { text: "Richiedi Consulenza", href: "#contatti" },
+        {
+          text: "Richiedi Consulenza",          href: "#contatti"},
       ]}
-      background={{ variant: "gradient-bars" }}
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/modern-high-end-architectural-detail-cle-1777989649870-d9a73473.png?_wi=1"
       imageAlt="Ufficio SBR Consulting"
-      mediaAnimation="slide-up"
     />
   </div>
 
@@ -62,9 +61,12 @@ export default function LandingPage() {
       title="Esperienza e Autorevolezza"
       description="SBR Consulting nasce con la missione di guidare i propri clienti in un mercato finanziario complesso. Ogni nostra operazione è finalizzata al massimo ritorno e alla sicurezza patrimoniale."
       metrics={[
-        { value: "4+", title: "Anni di esperienza" },
-        { value: "500+", title: "Pratiche concluse" },
-        { value: "98%", title: "Clienti soddisfatti" },
+        {
+          value: "4+",          title: "Anni di esperienza"},
+        {
+          value: "500+",          title: "Pratiche concluse"},
+        {
+          value: "98%",          title: "Clienti soddisfatti"},
       ]}
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/uploaded-1777990331589-yhm73r4m.png"
       mediaAnimation="slide-up"
@@ -79,14 +81,11 @@ export default function LandingPage() {
       useInvertedBackground={false}
       features={[
         {
-          title: "Cessione del Credito",          description: "Gestiamo l’intero processo di cessione del credito per imprese edili e professionisti, dalla raccolta documentale alla finalizzazione con partner finanziari. Ottimizziamo tempi, margini e sicurezza dell’operazione.",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/tmp/immagine-editoriale-realistica-e-profess-1777992118843-28f18b2c.png",          imageAlt: "Analisi"
-        },
+          title: "Cessione del Credito",          description: "Gestiamo l’intero processo di cessione del credito per imprese edili e professionisti, dalla raccolta documentale alla finalizzazione con partner finanziari. Ottimizziamo tempi, margini e sicurezza dell’operazione.",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/tmp/immagine-editoriale-realistica-e-profess-1777992118843-28f18b2c.png",          imageAlt: "Analisi"},
         {
-          title: "Advisory Finanziaria per Imprese",          description: "Supportiamo aziende nell’accesso al credito, nella gestione della liquidità e nella strutturazione finanziaria di progetti complessi. Costruiamo soluzioni su misura per crescita e stabilità nel tempo.",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/tmp/scena-editoriale-di-ufficio-moderno-inqu-1777992245663-3b456547.png",          imageAlt: "Gestione"
-        },
+          title: "Advisory Finanziaria per Imprese",          description: "Supportiamo aziende nell’accesso al credito, nella gestione della liquidità e nella strutturazione finanziaria di progetti complessi. Costruiamo soluzioni su misura per crescita e stabilità nel tempo.",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/tmp/scena-editoriale-di-ufficio-moderno-inqu-1777992245663-3b456547.png",          imageAlt: "Gestione"},
         {
-          title: "Gestione Documentale e Processi",          description: "Digitalizziamo e ottimizziamo i flussi documentali legati a pratiche finanziarie e immobiliari, riducendo errori e accelerando le tempistiche operative.",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/tmp/immagine-editoriale-realistica-di-una-pi-1777992368921-ed63f35c.png",          imageAlt: "Compliance"
-        },
+          title: "Gestione Documentale e Processi",          description: "Digitalizziamo e ottimizziamo i flussi documentali legati a pratiche finanziarie e immobiliari, riducendo errori e accelerando le tempistiche operative.",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/tmp/immagine-editoriale-realistica-di-una-pi-1777992368921-ed63f35c.png",          imageAlt: "Compliance"},
       ]}
       title="La nostra consulenza"
       description="Soluzioni personalizzate per la gestione e la cessione del credito, pensate per massimizzare il tuo vantaggio competitivo."
@@ -101,8 +100,12 @@ export default function LandingPage() {
         textboxLayout="default"
         useInvertedBackground={false}
         faqs={[
-          { id: "1", title: "A chi si rivolge SBR Consulting?", content: "Ci rivolgiamo a imprese edili, investitori immobiliari e aziende che necessitano di supporto nella gestione finanziaria o nello sviluppo di operazioni complesse." },
-          { id: "2", title: "In quanto tempo si conclude una cessione del credito?", content: "Le tempistiche variano in base alla complessità della pratica, ma grazie alla nostra struttura e ai partner riduciamo significativamente i tempi rispetto alla media di mercato." }
+          {
+            id: "1",            title: "A chi si rivolge SBR Consulting?",            content: "Ci rivolgiamo a imprese edili, investitori immobiliari e aziende che necessitano di supporto nella gestione finanziaria o nello sviluppo di operazioni complesse."
+          },
+          {
+            id: "2",            title: "In quanto tempo si conclude una cessione del credito?",            content: "Le tempistiche variano in base alla complessità della pratica, ma grazie alla nostra struttura e ai partner riduciamo significativamente i tempi rispetto alla media di mercato."
+          }
         ]}
       />
   </div>
@@ -111,9 +114,12 @@ export default function LandingPage() {
       <TestimonialCardTwelve
       useInvertedBackground={false}
       testimonials={[
-        { id: "1", name: "Mario Rossi", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/portrait-of-a-successful-businessman-in--1777989600826-3ffd2a08.png" },
-        { id: "2", name: "Giulia Bianchi", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/portrait-of-a-successful-businesswoman-i-1777989608935-9e271024.png" },
-        { id: "3", name: "Luca Verdi", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/portrait-of-a-senior-investor-suit-profe-1777989621701-82f1d949.png" },
+        {
+          id: "1",          name: "Mario Rossi",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/portrait-of-a-successful-businessman-in--1777989600826-3ffd2a08.png"},
+        {
+          id: "2",          name: "Giulia Bianchi",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/portrait-of-a-successful-businesswoman-i-1777989608935-9e271024.png"},
+        {
+          id: "3",          name: "Luca Verdi",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/portrait-of-a-senior-investor-suit-profe-1777989621701-82f1d949.png"},
       ]}
       cardTitle="Cosa dicono di noi"
       cardTag="Referenze"
@@ -124,7 +130,8 @@ export default function LandingPage() {
   <div id="contatti" data-section="contatti">
       <ContactSplit
       useInvertedBackground={false}
-      background={{ variant: "gradient-bars" }}
+      background={{
+        variant: "gradient-bars"}}
       tag="Contatti"
       title="Richiedi una consulenza gratuita"
       description="Prenota una sessione conoscitiva con uno dei nostri esperti. Trasforma i tuoi crediti in valore immediato."
@@ -139,14 +146,18 @@ export default function LandingPage() {
       columns={[
         {
           title: "Servizi",          items: [
-            { label: "Cessione Credito", href: "#" },
-            { label: "Consulenza", href: "#" },
+            {
+              label: "Cessione Credito",              href: "#"},
+            {
+              label: "Consulenza",              href: "#"},
           ],
         },
         {
           title: "Azienda",          items: [
-            { label: "Chi Siamo", href: "/#chi-siamo" },
-            { label: "Contatti", href: "/#contatti" },
+            {
+              label: "Chi Siamo",              href: "#chi-siamo"},
+            {
+              label: "Contatti",              href: "#contatti"},
           ],
         },
       ]}
