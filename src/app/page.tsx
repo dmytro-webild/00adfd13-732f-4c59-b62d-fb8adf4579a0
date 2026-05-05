@@ -8,7 +8,6 @@ import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import HeroLogo from '@/components/sections/hero/HeroLogo';
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
-import TestimonialCardTwelve from '@/components/sections/testimonial/TestimonialCardTwelve';
 import FaqDouble from '@/components/sections/faq/FaqDouble';
 
 export default function LandingPage() {
@@ -101,30 +100,11 @@ export default function LandingPage() {
         useInvertedBackground={false}
         faqs={[
           {
-            id: "1",            title: "A chi si rivolge SBR Consulting?",            content: "Ci rivolgiamo a imprese edili, investitori immobiliari e aziende che necessitano di supporto nella gestione finanziaria o nello sviluppo di operazioni complesse."
-          },
+            id: "1",            title: "A chi si rivolge SBR Consulting?",            content: "Ci rivolgiamo a imprese edili, investitori immobiliari e aziende che necessitano di supporto nella gestione finanziaria o nello sviluppo di operazioni complesse."},
           {
-            id: "2",            title: "In quanto tempo si conclude una cessione del credito?",            content: "Le tempistiche variano in base alla complessità della pratica, ma grazie alla nostra struttura e ai partner riduciamo significativamente i tempi rispetto alla media di mercato."
-          }
+            id: "2",            title: "In quanto tempo si conclude una cessione del credito?",            content: "Le tempistiche variano in base alla complessità della pratica, ma grazie alla nostra struttura e ai partner riduciamo significativamente i tempi rispetto alla media di mercato."}
         ]}
       />
-  </div>
-
-  <div id="testimonials" data-section="testimonials">
-      <TestimonialCardTwelve
-      useInvertedBackground={false}
-      testimonials={[
-        {
-          id: "1",          name: "Mario Rossi",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/portrait-of-a-successful-businessman-in--1777989600826-3ffd2a08.png"},
-        {
-          id: "2",          name: "Giulia Bianchi",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/portrait-of-a-successful-businesswoman-i-1777989608935-9e271024.png"},
-        {
-          id: "3",          name: "Luca Verdi",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/portrait-of-a-senior-investor-suit-profe-1777989621701-82f1d949.png"},
-      ]}
-      cardTitle="Cosa dicono di noi"
-      cardTag="Referenze"
-      cardAnimation="slide-up"
-    />
   </div>
 
   <div id="contatti" data-section="contatti">
