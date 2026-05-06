@@ -7,7 +7,7 @@ import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import HeroLogo from '@/components/sections/hero/HeroLogo';
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
-import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
+import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
 import FaqDouble from '@/components/sections/faq/FaqDouble';
 
 export default function LandingPage() {
@@ -26,7 +26,8 @@ export default function LandingPage() {
     >
       <ReactLenis root>
   <div id="nav" data-section="nav">
-      <NavbarStyleApple
+      <NavbarStyleCentered
+      logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/logo-placeholder.png"
       navItems={[
         {
           name: "Home",          id: "/"},
@@ -37,6 +38,7 @@ export default function LandingPage() {
         {
           name: "Contatti",          id: "/#contatti"},
       ]}
+      brandName="SBR Consulting"
     />
   </div>
 
