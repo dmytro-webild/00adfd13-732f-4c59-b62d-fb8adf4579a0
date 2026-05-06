@@ -61,6 +61,7 @@ Analizziamo ogni opportunità in modo strategico, riducendo il rischio e massimi
             textboxLayout="split"
             useInvertedBackground={true}
             className="bg-[#253259] text-white"
+            cardTitleClassName="text-[#000000]"
             features={[
               {
                 title: "Analisi e Selezione Operazioni",                description: "Individuiamo opportunità immobiliari con elevato potenziale, valutando: posizione, mercato, marginalità e rischio.",                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/professional-document-inspection-archite-1777989722562-4aaf17cf.png"
