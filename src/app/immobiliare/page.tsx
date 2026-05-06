@@ -41,7 +41,7 @@ export default function ImmobiliarePage() {
           />
         </div>
 
-        <div id="servizi" data-section="servizi">
+        <div id="servizi" data-section="servizi" style={{ backgroundColor: "#253259" }}>
           <FeatureCardMedia
             animationType="slide-up"
             textboxLayout="split"
