@@ -36,7 +36,7 @@ export default function ImmobiliarePage() {
 
         <div id="chi-siamo" data-section="chi-siamo">
           <SplitAbout 
-            title="Eccellenza nell'Immobiliare"
+            title="Sviluppiamo operazioni immobiliari ad alto rendimento"
             description="La nostra divisione dedicata all'immobiliare si occupa di gestire asset di prestigio con la massima attenzione ai dettagli e alle dinamiche di mercato."
             tag="About"
             tagIcon={Users}
