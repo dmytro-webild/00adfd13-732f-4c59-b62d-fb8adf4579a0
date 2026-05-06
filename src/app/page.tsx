@@ -46,7 +46,7 @@ export default function LandingPage() {
       description="Consulenza finanziaria di alto profilo per la cessione del credito. Eccellenza, serietà e risultati misurabili per la tua crescita."
       buttons={[
         {
-          text: "Richiedi Consulenza",          href: "#contatti"},
+          text: "Richiedi Consulenza",          href: "/#contatti"},
       ]}
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/modern-high-end-architectural-detail-cle-1777989649870-d9a73473.png?_wi=1"
       imageAlt="Ufficio SBR Consulting"
