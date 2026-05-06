@@ -3,8 +3,8 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
-import TextAbout from '@/components/sections/about/TextAbout';
-import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
+import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSplitTextAbout';
+import FeatureCardMedia from '@/components/sections/feature/FeatureCardMedia';
 
 export default function ImmobiliarePage() {
   return (
@@ -34,35 +34,26 @@ export default function ImmobiliarePage() {
         </div>
 
         <div id="chi-siamo" data-section="chi-siamo">
-          <TextAbout 
-            title="Sviluppiamo e valorizziamo operazioni immobiliari ad alto rendimento."
+          <InlineImageSplitTextAbout 
+            heading={[{ type: 'text', content: 'Eccellenza nell\'Immobiliare' }]}
             useInvertedBackground={false}
-            tag="About"
+            ariaLabel="About section"
           />
         </div>
 
         <div id="servizi" data-section="servizi">
-          <FeatureCardSeven
+          <FeatureCardMedia
             animationType="slide-up"
             textboxLayout="split"
             useInvertedBackground={true}
-            title="I Nostri Servizi "
-            description="SBR Consulting affianca investitori e proprietari nello sviluppo completo di operazioni immobiliari, con un approccio orientato al risultato.
-Analizziamo ogni opportunità in modo strategico, riducendo il rischio e massimizzando la marginalità.
-"
+            title="Servizi Immobiliari"
+            description="Offriamo soluzioni su misura per il tuo patrimonio immobiliare."
             features={[
               {
-                title: "Analisi e Selezione Operazioni",                description: "Individuiamo opportunità immobiliari con elevato potenziale, valutando:
-Posizione
-Mercato
-Marginalità
-Rischio",                imageSrc: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800&auto=format&fit=crop",                imageAlt: "Analisi e Selezione Operazioni"
+                id: "1",                title: "Valutazioni di Mercato",                description: "Analisi tecniche precise per determinare il reale valore del tuo asset.",                tag: "Valutazione"
               },
               {
-                title: "Asset Management",                description: "Ottimizzazione costante del valore degli immobili tramite strategie mirate.",                imageSrc: "https://images.unsplash.com/photo-1577412647305-991150c7d163?q=80&w=800&auto=format&fit=crop",                imageAlt: "Asset Management"
-              },
-              {
-                title: "Supporto Operativo",                description: "Gestione completa delle pratiche e della documentazione tecnica e legale.",                imageSrc: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop",                imageAlt: "Supporto Operativo"
+                id: "2",                title: "Gestione Asset",                description: "Strategie avanzate per massimizzare il rendimento dei tuoi investimenti.",                tag: "Asset"
               }
             ]}
           />
