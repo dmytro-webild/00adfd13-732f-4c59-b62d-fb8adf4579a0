@@ -82,7 +82,7 @@ Analizziamo ogni opportunità in modo strategico, riducendo il rischio e massimi
                 { content: "Individuiamo opportunità immobiliari con elevato potenziale.", media: <Search />, reverse: false },
                 { content: "Costruiamo l’operazione a livello finanziario e strategico: business plan, ottimizzazione fiscale e strutturazione del capitale.", media: <ClipboardCheck />, reverse: true },
                 { content: "Coordiniamo l’intero processo operativo di progettazione, ristrutturazione o costruzione e gestione dei fornitori.", media: <Handshake />, reverse: false },
-                { content: "Gestione Operativa", media: <BarChart3 />, reverse: true },
+                { content: "Massimizziamo il ritorno dell’investimento attraverso: vendita su carta, frazionamenti e affitti brevi o tradizionali.", media: <BarChart3 />, reverse: true },
                 { content: "Valorizzazione e Exit", media: <TrendingUp />, reverse: false },
             ]}
           />
