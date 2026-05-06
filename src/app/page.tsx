@@ -37,6 +37,7 @@ export default function LandingPage() {
         {
           name: "Contatti",          id: "/#contatti"},
       ]}
+      brandName="SBR Consulting"
     />
   </div>
 
