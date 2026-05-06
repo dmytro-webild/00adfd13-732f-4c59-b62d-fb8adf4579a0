@@ -37,7 +37,8 @@ export default function ImmobiliarePage() {
         <div id="chi-siamo" data-section="chi-siamo">
           <SplitAbout 
             title="Sviluppiamo operazioni immobiliari ad alto rendimento"
-            description="La nostra divisione dedicata all'immobiliare si occupa di gestire asset di prestigio con la massima attenzione ai dettagli e alle dinamiche di mercato."
+            description="SBR Consulting affianca investitori e proprietari nello sviluppo completo di operazioni immobiliari, con un approccio orientato al risultato.
+Analizziamo ogni opportunità in modo strategico, riducendo il rischio e massimizzando la marginalità."
             tag="About"
             tagIcon={Users}
             textboxLayout="split"
