@@ -37,7 +37,8 @@ export default function LandingPage() {
         {
           name: "Contatti",          id: "/#contatti"},
       ]}
-      brandName="SBR Consulting"
+      logoSrc="/logo.svg"
+      logoAlt="SBR Consulting Logo"
     />
   </div>
 
@@ -135,9 +136,9 @@ export default function LandingPage() {
         {
           title: "Azienda",          items: [
             {
-              label: "Chi Siamo",              href: "#chi-siamo"},
+              label: "Chi Siamo",              href: "/#chi-siamo"},
             {
-              label: "Contatti",              href: "#contatti"},
+              label: "Contatti",              href: "/#contatti"},
           ],
         },
       ]}
