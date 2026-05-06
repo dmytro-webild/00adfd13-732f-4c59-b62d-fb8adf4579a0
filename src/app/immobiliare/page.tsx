@@ -3,8 +3,9 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
-import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSplitTextAbout';
-import FeatureCardMedia from '@/components/sections/feature/FeatureCardMedia';
+import SplitAbout from '@/components/sections/about/SplitAbout';
+import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
+import { BriefcaseBusiness, Users } from 'lucide-react';
 
 export default function ImmobiliarePage() {
   return (
@@ -34,26 +35,35 @@ export default function ImmobiliarePage() {
         </div>
 
         <div id="chi-siamo" data-section="chi-siamo">
-          <InlineImageSplitTextAbout 
-            heading={[{ type: 'text', content: 'Eccellenza nell\'Immobiliare' }]}
+          <SplitAbout 
+            title="Eccellenza nell'Immobiliare"
+            description="La nostra divisione dedicata all'immobiliare si occupa di gestire asset di prestigio con la massima attenzione ai dettagli e alle dinamiche di mercato."
+            tag="About"
+            tagIcon={Users}
+            textboxLayout="split"
             useInvertedBackground={false}
+            bulletPoints={[
+              { title: "Professionalità", description: "Competenza pluriennale nel settore immobiliare.", icon: Users },
+              { title: "Strategia", description: "Piani personalizzati per la valorizzazione del patrimonio.", icon: BriefcaseBusiness }
+            ]}
             ariaLabel="About section"
           />
         </div>
 
         <div id="servizi" data-section="servizi">
-          <FeatureCardMedia
+          <FeatureCardSeven
+            title="Servizi Immobiliari"
+            description="Soluzioni avanzate per il mercato immobiliare, progettate per offrire il massimo rendimento in ogni transazione."
             animationType="slide-up"
             textboxLayout="split"
             useInvertedBackground={true}
-            title="Servizi Immobiliari"
-            description="Offriamo soluzioni su misura per il tuo patrimonio immobiliare."
+            className="bg-[#253259] text-white"
             features={[
               {
-                id: "1",                title: "Valutazioni di Mercato",                description: "Analisi tecniche precise per determinare il reale valore del tuo asset.",                tag: "Valutazione"
+                title: "Valutazioni Tecniche",                description: "Stime accurate basate su dati di mercato reali.",                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/modern-high-end-architectural-detail-cle-1777989649870-d9a73473.png"
               },
               {
-                id: "2",                title: "Gestione Asset",                description: "Strategie avanzate per massimizzare il rendimento dei tuoi investimenti.",                tag: "Asset"
+                title: "Gestione Asset",                description: "Ottimizzazione del portafoglio immobiliare per investitori.",                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/uploaded-1777990331589-yhm73r4m.png"
               }
             ]}
           />
