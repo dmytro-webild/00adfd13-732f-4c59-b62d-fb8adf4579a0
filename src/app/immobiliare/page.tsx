@@ -35,7 +35,7 @@ export default function ImmobiliarePage() {
 
         <div id="chi-siamo" data-section="chi-siamo">
           <TextAbout 
-            title="Eccellenza Strategica nell'Immobiliare"
+            title="Sviluppiamo e valorizziamo operazioni immobiliari ad alto rendimento."
             useInvertedBackground={false}
             tag="About"
           />
