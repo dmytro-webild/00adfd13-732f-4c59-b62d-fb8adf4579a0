@@ -75,7 +75,7 @@ Analizziamo ogni opportunità in modo strategico, riducendo il rischio e massimi
         <div id="processo" data-section="processo">
           <TimelineProcessFlow
             title="Il nostro processo"
-            description="Un metodo collaudato per garantire efficienza e trasparenza in ogni fase del progetto."
+            description=""
             textboxLayout="default"
             animationType="slide-up"
             items={[
