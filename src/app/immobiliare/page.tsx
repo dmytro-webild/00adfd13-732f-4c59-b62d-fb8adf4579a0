@@ -32,6 +32,7 @@ export default function ImmobiliarePage() {
               { name: "Immobiliare", id: "/immobiliare" },
               { name: "Contatti", id: "/#contatti" },
             ]}
+            brandName="SBR Consulting"
           />
         </div>
 
