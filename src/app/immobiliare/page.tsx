@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
+import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import SplitAbout from '@/components/sections/about/SplitAbout';
 import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
 import TimelineProcessFlow from '@/components/cardStack/layouts/timelines/TimelineProcessFlow';
@@ -25,15 +25,13 @@ export default function ImmobiliarePage() {
     >
       <ReactLenis root>
         <div id="nav" data-section="nav">
-          <NavbarStyleCentered
-            logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/logo-placeholder.png"
+          <NavbarStyleApple
             navItems={[
               { name: "Home", id: "/" },
               { name: "Chi Siamo", id: "/#chi-siamo" },
               { name: "Immobiliare", id: "/immobiliare" },
               { name: "Contatti", id: "/#contatti" },
             ]}
-            brandName="SBR Consulting"
           />
         </div>
 
