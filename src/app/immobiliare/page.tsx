@@ -3,8 +3,8 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
-import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSplitTextAbout';
-import FeatureCardMedia from '@/components/sections/feature/FeatureCardMedia';
+import TextAbout from '@/components/sections/about/TextAbout';
+import FeatureCardOne from '@/components/sections/feature/FeatureCardOne';
 
 export default function ImmobiliarePage() {
   return (
@@ -34,26 +34,30 @@ export default function ImmobiliarePage() {
         </div>
 
         <div id="chi-siamo" data-section="chi-siamo">
-          <InlineImageSplitTextAbout 
-            heading={[{ type: 'text', content: 'Eccellenza nell\'Immobiliare' }]}
+          <TextAbout 
+            title="Eccellenza Strategica nell'Immobiliare"
             useInvertedBackground={false}
-            ariaLabel="About section"
+            tag="About"
           />
         </div>
 
         <div id="servizi" data-section="servizi">
-          <FeatureCardMedia
+          <FeatureCardOne
             animationType="slide-up"
             textboxLayout="split"
+            gridVariant="three-columns-all-equal-width"
             useInvertedBackground={true}
-            title="Servizi Immobiliari"
-            description="Offriamo soluzioni su misura per il tuo patrimonio immobiliare."
+            title="Servizi Immobiliari Professionali"
+            description="Soluzioni integrate per la gestione, valutazione e valorizzazione del tuo patrimonio immobiliare con un approccio moderno e professionale."
             features={[
               {
-                id: "1",                title: "Valutazioni di Mercato",                description: "Analisi tecniche precise per determinare il reale valore del tuo asset.",                tag: "Valutazione"
+                title: "Valutazioni Accurate",                description: "Analisi tecnica e di mercato dettagliata per ogni tipologia di asset immobiliare."
               },
               {
-                id: "2",                title: "Gestione Asset",                description: "Strategie avanzate per massimizzare il rendimento dei tuoi investimenti.",                tag: "Asset"
+                title: "Asset Management",                description: "Ottimizzazione costante del valore degli immobili tramite strategie mirate."
+              },
+              {
+                title: "Supporto Operativo",                description: "Gestione completa delle pratiche e della documentazione tecnica e legale."
               }
             ]}
           />
