@@ -46,11 +46,17 @@ export default function ImmobiliarePage() {
             animationType="slide-up"
             textboxLayout="split"
             useInvertedBackground={true}
-            title="Servizi Immobiliari Professionali"
-            description="Soluzioni integrate per la gestione, valutazione e valorizzazione del tuo patrimonio immobiliare con un approccio moderno e professionale."
+            title="I Nostri Servizi "
+            description="SBR Consulting affianca investitori e proprietari nello sviluppo completo di operazioni immobiliari, con un approccio orientato al risultato.
+Analizziamo ogni opportunità in modo strategico, riducendo il rischio e massimizzando la marginalità.
+"
             features={[
               {
-                title: "Valutazioni Accurate",                description: "Analisi tecnica e di mercato dettagliata per ogni tipologia di asset immobiliare.",                imageSrc: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800&auto=format&fit=crop",                imageAlt: "Valutazioni Accurate"
+                title: "Analisi e Selezione Operazioni",                description: "Individuiamo opportunità immobiliari con elevato potenziale, valutando:
+Posizione
+Mercato
+Marginalità
+Rischio",                imageSrc: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800&auto=format&fit=crop",                imageAlt: "Analisi e Selezione Operazioni"
               },
               {
                 title: "Asset Management",                description: "Ottimizzazione costante del valore degli immobili tramite strategie mirate.",                imageSrc: "https://images.unsplash.com/photo-1577412647305-991150c7d163?q=80&w=800&auto=format&fit=crop",                imageAlt: "Asset Management"
