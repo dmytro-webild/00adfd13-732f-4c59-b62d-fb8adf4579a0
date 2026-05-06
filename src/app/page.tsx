@@ -37,8 +37,6 @@ export default function LandingPage() {
         {
           name: "Contatti",          id: "/#contatti"},
       ]}
-      logoSrc="/logo.svg"
-      logoAlt="SBR Consulting Logo"
     />
   </div>
 
