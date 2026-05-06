@@ -79,8 +79,8 @@ Analizziamo ogni opportunità in modo strategico, riducendo il rischio e massimi
             textboxLayout="default"
             animationType="slide-up"
             items={[
-                { content: "Analisi Preliminare", media: <Search />, reverse: false },
-                { content: "Due Diligence", media: <ClipboardCheck />, reverse: true },
+                { content: "Individuiamo opportunità immobiliari con elevato potenziale.", media: <Search />, reverse: false },
+                { content: "Costruiamo l’operazione a livello finanziario e strategico: business plan, ottimizzazione fiscale e strutturazione del capitale.", media: <ClipboardCheck />, reverse: true },
                 { content: "Pianificazione Strategica", media: <Handshake />, reverse: false },
                 { content: "Gestione Operativa", media: <BarChart3 />, reverse: true },
                 { content: "Valorizzazione e Exit", media: <TrendingUp />, reverse: false },
