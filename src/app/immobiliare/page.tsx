@@ -4,7 +4,7 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import TextAbout from '@/components/sections/about/TextAbout';
-import FeatureCardOne from '@/components/sections/feature/FeatureCardOne';
+import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
 
 export default function ImmobiliarePage() {
   return (
@@ -42,22 +42,21 @@ export default function ImmobiliarePage() {
         </div>
 
         <div id="servizi" data-section="servizi">
-          <FeatureCardOne
+          <FeatureCardSeven
             animationType="slide-up"
             textboxLayout="split"
-            gridVariant="three-columns-all-equal-width"
             useInvertedBackground={true}
             title="Servizi Immobiliari Professionali"
             description="Soluzioni integrate per la gestione, valutazione e valorizzazione del tuo patrimonio immobiliare con un approccio moderno e professionale."
             features={[
               {
-                title: "Valutazioni Accurate",                description: "Analisi tecnica e di mercato dettagliata per ogni tipologia di asset immobiliare."
+                title: "Valutazioni Accurate",                description: "Analisi tecnica e di mercato dettagliata per ogni tipologia di asset immobiliare.",                imageSrc: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800&auto=format&fit=crop",                imageAlt: "Valutazioni Accurate"
               },
               {
-                title: "Asset Management",                description: "Ottimizzazione costante del valore degli immobili tramite strategie mirate."
+                title: "Asset Management",                description: "Ottimizzazione costante del valore degli immobili tramite strategie mirate.",                imageSrc: "https://images.unsplash.com/photo-1577412647305-991150c7d163?q=80&w=800&auto=format&fit=crop",                imageAlt: "Asset Management"
               },
               {
-                title: "Supporto Operativo",                description: "Gestione completa delle pratiche e della documentazione tecnica e legale."
+                title: "Supporto Operativo",                description: "Gestione completa delle pratiche e della documentazione tecnica e legale.",                imageSrc: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop",                imageAlt: "Supporto Operativo"
               }
             ]}
           />
