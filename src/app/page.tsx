@@ -101,7 +101,11 @@ export default function LandingPage() {
           {
             id: "1",            title: "A chi si rivolge SBR Consulting?",            content: "Ci rivolgiamo a imprese edili, investitori immobiliari e aziende che necessitano di supporto nella gestione finanziaria o nello sviluppo di operazioni complesse."},
           {
-            id: "2",            title: "In quanto tempo si conclude una cessione del credito?",            content: "Le tempistiche variano in base alla complessità della pratica, ma grazie alla nostra struttura e ai partner riduciamo significativamente i tempi rispetto alla media di mercato."}
+            id: "3",            title: "È possibile personalizzare il piano di consulenza?",            content: "Assolutamente sì. Analizziamo le specifiche esigenze aziendali per proporre soluzioni finanziarie sartoriali, focalizzate sui tuoi obiettivi di crescita e sicurezza patrimoniale."},
+          {
+            id: "2",            title: "In quanto tempo si conclude una cessione del credito?",            content: "Le tempistiche variano in base alla complessità della pratica, ma grazie alla nostra struttura e ai partner riduciamo significativamente i tempi rispetto alla media di mercato."},
+          {
+            id: "4",            title: "Quali garanzie offrite sulla gestione documentale?",            content: "Il nostro approccio integra rigidi protocolli di compliance e digitalizzazione, assicurando che ogni pratica sia sempre conforme, tracciata e pronta per gli audit finanziari necessari."}
         ]}
       />
   </div>
