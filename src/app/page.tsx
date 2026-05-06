@@ -67,7 +67,7 @@ export default function LandingPage() {
         {
           value: "98%",          title: "Clienti soddisfatti"},
       ]}
-      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/uploaded-1777990331589-yhm73r4m.png"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/uploaded-1778067524001-asxczrhy.png"
       mediaAnimation="slide-up"
       metricsAnimation="slide-up"
     />
