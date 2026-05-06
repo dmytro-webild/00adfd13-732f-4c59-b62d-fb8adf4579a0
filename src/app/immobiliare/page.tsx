@@ -5,7 +5,8 @@ import ReactLenis from "lenis/react";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import SplitAbout from '@/components/sections/about/SplitAbout';
 import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
-import { BriefcaseBusiness, Users } from 'lucide-react';
+import TimelineCardStack from '@/components/cardStack/layouts/timelines/TimelineCardStack';
+import { BriefcaseBusiness, Users, Search, Target, ClipboardCheck, BarChart3, TrendingUp } from 'lucide-react';
 
 export default function ImmobiliarePage() {
   return (
@@ -68,6 +69,31 @@ Analizziamo ogni opportunità in modo strategico, riducendo il rischio e massimi
               }
             ]}
           />
+        </div>
+
+        <div id="processo-servizio" data-section="processo-servizio">
+            <TimelineCardStack
+                title="Processo del servizio"
+                description="Il nostro metodo operativo per garantire trasparenza e successo in ogni fase dell'operazione."
+                textboxLayout="default"
+                ariaLabel="Processo del servizio"
+            >
+                <div className="grid grid-cols-1 md:grid-cols-5 gap-6 p-6">
+                    {[ 
+                        { icon: Search, title: "Ricerca", text: "Analisi del mercato" },
+                        { icon: Target, title: "Strategia", text: "Obiettivi condivisi" },
+                        { icon: ClipboardCheck, title: "Analisi", text: "Valutazione tecnica" },
+                        { icon: BarChart3, title: "Esecuzione", text: "Gestione operativa" },
+                        { icon: TrendingUp, title: "Rendimento", text: "Chiusura e profitto" }
+                    ].map((step, i) => (
+                        <div key={i} className="bg-card p-6 rounded-xl flex flex-col items-center text-center">
+                            <step.icon className="w-10 h-10 mb-4 text-primary" />
+                            <h3 className="font-bold mb-2">{step.title}</h3>
+                            <p className="text-sm text-foreground/70">{step.text}</p>
+                        </div>
+                    ))}
+                </div>
+            </TimelineCardStack>
         </div>
       </ReactLenis>
     </ThemeProvider>
