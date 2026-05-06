@@ -83,7 +83,7 @@ Analizziamo ogni opportunità in modo strategico, riducendo il rischio e massimi
                 { content: "Costruiamo l’operazione a livello finanziario e strategico: business plan, ottimizzazione fiscale e strutturazione del capitale.", media: <ClipboardCheck />, reverse: true },
                 { content: "Coordiniamo l’intero processo operativo di progettazione, ristrutturazione o costruzione e gestione dei fornitori.", media: <Handshake />, reverse: false },
                 { content: "Massimizziamo il ritorno dell’investimento attraverso: vendita su carta, frazionamenti e affitti brevi o tradizionali.", media: <BarChart3 />, reverse: true },
-                { content: "Gestiamo operazioni chiavi in mano occupandoci dell’intero processo immobiliare, con un unico referente e pieno controllo su tempi, costi e risultati.", media: <TrendingUp />, reverse: false },
+                { content: "Gestiamo operazioni chiavi in mano occupandoci dell’intero processo, con un unico referente e pieno controllo su tempi, costi e risultati.", media: <TrendingUp />, reverse: false },
             ]}
           />
         </div>
