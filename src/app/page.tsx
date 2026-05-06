@@ -85,8 +85,8 @@ export default function LandingPage() {
         {
           title: "Gestione Documentale e Processi",          description: "Digitalizziamo e ottimizziamo i flussi documentali legati a pratiche finanziarie e immobiliari, riducendo errori e accelerando le tempistiche operative.",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/tmp/immagine-editoriale-realistica-di-una-pi-1777992368921-ed63f35c.png?_wi=2",          imageAlt: "Compliance"},
       ]}
-      title="La nostra consulenza"
-      description="Soluzioni personalizzate per la gestione e la cessione del credito, pensate per massimizzare il tuo vantaggio competitivo."
+      title="I nostri Servizi"
+      description=""
     />
   </div>
 
