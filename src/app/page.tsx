@@ -105,7 +105,7 @@ export default function LandingPage() {
           {
             id: "2",            title: "In quanto tempo si conclude una cessione del credito?",            content: "Le tempistiche variano in base alla complessità della pratica, ma grazie alla nostra struttura e ai partner riduciamo significativamente i tempi rispetto alla media di mercato."},
           {
-            id: "4",            title: "Quali garanzie offrite sulla gestione documentale?",            content: "Il nostro approccio integra rigidi protocolli di compliance e digitalizzazione, assicurando che ogni pratica sia sempre conforme, tracciata e pronta per gli audit finanziari necessari."}
+            id: "4",            title: "Offrite una valutazione preliminare della pratica?",            content: "Il nostro approccio integra rigidi protocolli di compliance e digitalizzazione, assicurando che ogni pratica sia sempre conforme, tracciata e pronta per gli audit finanziari necessari."}
         ]}
       />
   </div>
