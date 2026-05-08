@@ -132,9 +132,9 @@ export default function LandingPage() {
         {
           title: "Servizi",          items: [
             {
-              label: "Cessione Credito",              href: "#"},
+              label: "Cessione Credito",              href: "/#servizi"},
             {
-              label: "Consulenza",              href: "#"},
+              label: "Consulenza",              href: "/#servizi"},
           ],
         },
         {
