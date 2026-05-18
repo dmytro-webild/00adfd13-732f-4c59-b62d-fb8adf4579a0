@@ -36,14 +36,14 @@ export default function ImmobiliarePage() {
           />
         </div>
 
-        <div id="chi-siamo" data-section="chi-siamo">
+        <div id="chi-siamo" data-section="chi-siamo" style={{ backgroundColor: '#253259' }}>
           <SplitAbout 
             title="Sviluppiamo operazioni immobiliari ad alto rendimento"
             description="SBR Consulting affianca investitori e proprietari nello sviluppo completo di operazioni immobiliari, con un approccio orientato al risultato. Analizziamo ogni opportunità in modo strategico, riducendo il rischio e massimizzando la marginalità."
             tag="About"
             tagIcon={Users}
             textboxLayout="split"
-            useInvertedBackground={false}
+            useInvertedBackground={true}
             bulletPoints={[
               { title: "Professionalità", description: "Competenza pluriennale nel settore immobiliare.", icon: Users },
               { title: "Strategia", description: "Piani personalizzati per la valorizzazione del patrimonio.", icon: BriefcaseBusiness }
