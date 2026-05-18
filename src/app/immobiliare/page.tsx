@@ -39,7 +39,8 @@ export default function ImmobiliarePage() {
         <div id="chi-siamo" data-section="chi-siamo">
           <SplitAbout 
             title="Sviluppiamo operazioni immobiliari ad alto rendimento"
-            description="SBR Consulting affianca investitori e proprietari nello sviluppo completo di operazioni immobiliari, con un approccio orientato al risultato. Analizziamo ogni opportunità in modo strategico, riducendo il rischio e massimizzando la marginalità."
+            description="SBR Consulting affianca investitori e proprietari nello sviluppo completo di operazioni immobiliari, con un approccio orientato al risultato.
+Analizziamo ogni opportunità in modo strategico, riducendo il rischio e massimizzando la marginalità."
             tag="About"
             tagIcon={Users}
             textboxLayout="split"
@@ -52,23 +53,21 @@ export default function ImmobiliarePage() {
           />
         </div>
 
-        <div id="servizi" data-section="servizi" style={{ backgroundColor: "#253259" }}>
+        <div id="servizi" data-section="servizi">
           <FeatureCardSeven
             title="Servizi Immobiliari"
             description="Soluzioni avanzate per il mercato immobiliare, progettate per offrire il massimo rendimento in ogni transazione."
             animationType="slide-up"
             textboxLayout="split"
             useInvertedBackground={true}
+            className="bg-[#253259] text-white"
+            cardTitleClassName="text-[#000000]"
             features={[
               {
-                title: "Analisi e Selezione Operazioni",                
-                description: "Individuiamo opportunità immobiliari con elevato potenziale, valutando: posizione, mercato, marginalità e rischio.",                
-                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/professional-document-inspection-archite-1777989722562-4aaf17cf.png"
+                title: "Analisi e Selezione Operazioni",                description: "Individuiamo opportunità immobiliari con elevato potenziale, valutando: posizione, mercato, marginalità e rischio.",                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/professional-document-inspection-archite-1777989722562-4aaf17cf.png"
               },
               {
-                title: "Gestione dell'Intera Operazione",                
-                description: "Gestiamo l’intero ciclo immobiliare per conto del cliente, con un unico interlocutore e controllo totale su tempi, costi e risultati.",                
-                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/realistic-scene-of-a-construction-worksp-1778068727825-db4b0cfc.png"
+                title: "Gestione dell'Intera Operazione",                description: "Gestiamo l’intero ciclo immobiliare per conto del cliente, con un unico interlocutore e controllo totale su tempi, costi e risultati.",                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/realistic-scene-of-a-construction-worksp-1778068727825-db4b0cfc.png"
               }
             ]}
           />
