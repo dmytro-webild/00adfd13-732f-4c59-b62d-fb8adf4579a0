@@ -104,7 +104,7 @@ export default function LandingPage() {
           {
             id: "3",            title: "Gestite anche tutta la parte burocratica?",            content: "Sì, seguiamo l’intero processo: dalla raccolta documentale fino alla chiusura dell’operazione, riducendo il carico operativo per il cliente."},
           {
-            id: "2",            title: "In quanto tempo si conclude una cessione del credito?",            content: "Le tempistiche variano in base alla complessità della pratica, ma grazie alla nostra struttura e ai partner riduciamo significativamente i tempi rispetto alla media di mercato."},
+            id: "2",            title: "In quanto tempo si conclude una cessione del credito?",            content: "Le tempistiche variano in base alla complessità della pratica, ma grazie ai nostri partner riduciamo significativamente i tempi rispetto alla media di mercato."},
           {
             id: "4",            title: "Offrite una valutazione preliminare della pratica?",            content: "Sì, analizziamo gratuitamente la documentazione disponibile e la situazione del credito per verificare la fattibilità dell’operazione, individuare eventuali criticità e proporre il percorso più adatto al cliente."}
         ]}
