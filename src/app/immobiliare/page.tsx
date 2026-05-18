@@ -7,6 +7,7 @@ import SplitAbout from '@/components/sections/about/SplitAbout';
 import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
 import TimelineProcessFlow from '@/components/cardStack/layouts/timelines/TimelineProcessFlow';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
+import HeroBillboard from '@/components/sections/hero/HeroBillboard';
 import { BriefcaseBusiness, Users, Search, ClipboardCheck, Handshake, BarChart3, TrendingUp } from 'lucide-react';
 
 export default function ImmobiliarePage() {
@@ -36,14 +37,28 @@ export default function ImmobiliarePage() {
           />
         </div>
 
-        <div id="chi-siamo" data-section="chi-siamo" style={{ backgroundColor: '#253259' }}>
+        <div id="hero" data-section="hero">
+          <HeroBillboard
+            title="Soluzioni Immobiliari d'Eccellenza"
+            description="Sviluppiamo operazioni immobiliari ad alto rendimento, trasformando opportunità complesse in successi tangibili."
+            background={{ variant: "gradient-bars" }}
+            buttons={[
+              { text: "Scopri di più", href: "/#servizi" },
+              { text: "Contattaci", href: "/#contatti" }
+            ]}
+            imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/professional-document-inspection-archite-1777989722562-4aaf17cf.png?_wi=1"
+            imageAlt="Hero SBR Immobiliare"
+          />
+        </div>
+
+        <div id="chi-siamo" data-section="chi-siamo">
           <SplitAbout 
             title="Sviluppiamo operazioni immobiliari ad alto rendimento"
             description="SBR Consulting affianca investitori e proprietari nello sviluppo completo di operazioni immobiliari, con un approccio orientato al risultato. Analizziamo ogni opportunità in modo strategico, riducendo il rischio e massimizzando la marginalità."
             tag="About"
             tagIcon={Users}
             textboxLayout="split"
-            useInvertedBackground={true}
+            useInvertedBackground={false}
             bulletPoints={[
               { title: "Professionalità", description: "Competenza pluriennale nel settore immobiliare.", icon: Users },
               { title: "Strategia", description: "Piani personalizzati per la valorizzazione del patrimonio.", icon: BriefcaseBusiness }
@@ -63,7 +78,7 @@ export default function ImmobiliarePage() {
               {
                 title: "Analisi e Selezione Operazioni",                
                 description: "Individuiamo opportunità immobiliari con elevato potenziale, valutando: posizione, mercato, marginalità e rischio.",                
-                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/professional-document-inspection-archite-1777989722562-4aaf17cf.png"
+                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/professional-document-inspection-archite-1777989722562-4aaf17cf.png?_wi=2"
               },
               {
                 title: "Gestione dell'Intera Operazione",                
