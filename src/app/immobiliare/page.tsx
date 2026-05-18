@@ -52,7 +52,7 @@ export default function ImmobiliarePage() {
           />
         </div>
 
-        <div id="servizi" data-section="servizi">
+        <div id="servizi" data-section="servizi" style={{ backgroundColor: "#253259" }}>
           <FeatureCardSeven
             title="Servizi Immobiliari"
             description="Soluzioni avanzate per il mercato immobiliare, progettate per offrire il massimo rendimento in ogni transazione."
