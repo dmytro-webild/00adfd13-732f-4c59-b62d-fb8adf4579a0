@@ -46,7 +46,7 @@ export default function ImmobiliarePage() {
               { text: "Scopri di più", href: "/#servizi" },
               { text: "Contattaci", href: "/#contatti" }
             ]}
-            imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/professional-document-inspection-archite-1777989722562-4aaf17cf.png"
+            imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/professional-document-inspection-archite-1777989722562-4aaf17cf.png?_wi=1"
             imageAlt="Hero SBR Immobiliare"
           />
         </div>
@@ -78,7 +78,7 @@ export default function ImmobiliarePage() {
               {
                 title: "Analisi e Selezione Operazioni",                
                 description: "Individuiamo opportunità immobiliari con elevato potenziale, valutando: posizione, mercato, marginalità e rischio.",                
-                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/professional-document-inspection-archite-1777989722562-4aaf17cf.png"
+                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/professional-document-inspection-archite-1777989722562-4aaf17cf.png?_wi=2"
               },
               {
                 title: "Gestione dell'Intera Operazione",                
