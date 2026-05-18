@@ -7,7 +7,6 @@ import SplitAbout from '@/components/sections/about/SplitAbout';
 import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
 import TimelineProcessFlow from '@/components/cardStack/layouts/timelines/TimelineProcessFlow';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
-import HeroBillboard from '@/components/sections/hero/HeroBillboard';
 import { BriefcaseBusiness, Users, Search, ClipboardCheck, Handshake, BarChart3, TrendingUp } from 'lucide-react';
 
 export default function ImmobiliarePage() {
@@ -34,20 +33,6 @@ export default function ImmobiliarePage() {
               { name: "Contatti", id: "/#contatti" },
             ]}
             brandName="SBR Consulting"
-          />
-        </div>
-
-        <div id="hero" data-section="hero">
-          <HeroBillboard
-            title="Soluzioni Immobiliari d'Eccellenza"
-            description="Sviluppiamo operazioni immobiliari ad alto rendimento, trasformando opportunità complesse in successi tangibili."
-            background={{ variant: "gradient-bars" }}
-            buttons={[
-              { text: "Scopri di più", href: "/#servizi" },
-              { text: "Contattaci", href: "/#contatti" }
-            ]}
-            imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/professional-document-inspection-archite-1777989722562-4aaf17cf.png?_wi=1"
-            imageAlt="Hero SBR Immobiliare"
           />
         </div>
 
@@ -78,7 +63,7 @@ export default function ImmobiliarePage() {
               {
                 title: "Analisi e Selezione Operazioni",                
                 description: "Individuiamo opportunità immobiliari con elevato potenziale, valutando: posizione, mercato, marginalità e rischio.",                
-                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/professional-document-inspection-archite-1777989722562-4aaf17cf.png?_wi=2"
+                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/professional-document-inspection-archite-1777989722562-4aaf17cf.png"
               },
               {
                 title: "Gestione dell'Intera Operazione",                
