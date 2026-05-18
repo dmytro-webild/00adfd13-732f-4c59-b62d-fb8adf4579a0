@@ -2,11 +2,11 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
+import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import SplitAbout from '@/components/sections/about/SplitAbout';
-import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
+import FeatureBorderGlow from '@/components/sections/feature/featureBorderGlow/FeatureBorderGlow';
 import TimelineCardStack from '@/components/cardStack/layouts/timelines/TimelineCardStack';
-import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
+import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
 import { BriefcaseBusiness, Users, Search, ClipboardCheck, Handshake, BarChart3, TrendingUp } from 'lucide-react';
 
 export default function ImmobiliarePage() {
@@ -25,7 +25,7 @@ export default function ImmobiliarePage() {
     >
       <ReactLenis root>
         <div id="nav" data-section="nav">
-          <NavbarStyleApple
+          <NavbarLayoutFloatingInline
             navItems={[
               { name: "Home", id: "/" },
               { name: "Chi Siamo", id: "/#chi-siamo" },
@@ -39,35 +39,27 @@ export default function ImmobiliarePage() {
         <div id="chi-siamo" data-section="chi-siamo">
           <SplitAbout 
             title="Sviluppiamo operazioni immobiliari ad alto rendimento"
-            description="SBR Consulting affianca investitori e proprietari nello sviluppo completo di operazioni immobiliari, con un approccio orientato al risultato.
-Analizziamo ogni opportunità in modo strategico, riducendo il rischio e massimizzando la marginalità."
             tag="About"
             tagIcon={Users}
-            textboxLayout="split"
             useInvertedBackground={false}
-            bulletPoints={[
-              { title: "Professionalità", description: "Competenza pluriennale nel settore immobiliare.", icon: Users },
-              { title: "Strategia", description: "Piani personalizzati per la valorizzazione del patrimonio.", icon: BriefcaseBusiness }
-            ]}
             ariaLabel="About section"
           />
         </div>
 
         <div id="servizi" data-section="servizi">
-          <FeatureCardSeven
+          <FeatureBorderGlow
             title="Servizi Immobiliari"
             description="Soluzioni avanzate per il mercato immobiliare, progettate per offrire il massimo rendimento in ogni transazione."
             animationType="slide-up"
             textboxLayout="split"
             useInvertedBackground={true}
             className="bg-[#253259] text-white"
-            cardTitleClassName="text-[#000000]"
             features={[
               {
-                title: "Analisi e Selezione Operazioni",                description: "Individuiamo opportunità immobiliari con elevato potenziale, valutando: posizione, mercato, marginalità e rischio.",                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/professional-document-inspection-archite-1777989722562-4aaf17cf.png"
+                title: "Analisi e Selezione Operazioni",                description: "Individuiamo opportunità immobiliari con elevato potenziale, valutando: posizione, mercato, marginalità e rischio.",                icon: Search
               },
               {
-                title: "Gestione dell'Intera Operazione",                description: "Gestiamo l’intero ciclo immobiliare per conto del cliente, con un unico interlocutore e controllo totale su tempi, costi e risultati.",                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/realistic-scene-of-a-construction-worksp-1778068727825-db4b0cfc.png"
+                title: "Gestione dell'Intera Operazione",                description: "Gestiamo l’intero ciclo immobiliare per conto del cliente, con un unico interlocutore e controllo totale su tempi, costi e risultati.",                icon: ClipboardCheck
               }
             ]}
           />
@@ -77,7 +69,6 @@ Analizziamo ogni opportunità in modo strategico, riducendo il rischio e massimi
           <TimelineCardStack
             title="Il nostro processo"
             textboxLayout="split"
-            animationType="slide-up"
           >
             <div className="space-y-6">
                 <p>Individuiamo opportunità immobiliari con elevato potenziale.</p>
@@ -90,23 +81,22 @@ Analizziamo ogni opportunità in modo strategico, riducendo il rischio e massimi
         </div>
 
         <div id="footer" data-section="footer">
-          <FooterBaseReveal
+          <FooterLogoEmphasis
             logoText="SBR Consulting"
             columns={[
               {
-                title: "Servizi",                items: [
+                items: [
                   { label: "Cessione Credito", href: "/#servizi" },
                   { label: "Consulenza", href: "/#servizi" },
                 ],
               },
               {
-                title: "Azienda",                items: [
+                items: [
                   { label: "Chi Siamo", href: "/#chi-siamo" },
                   { label: "Contatti", href: "/#contatti" },
                 ],
               },
             ]}
-            copyrightText="© 2024 SBR Consulting. Tutti i diritti riservati."
           />
         </div>
       </ReactLenis>
