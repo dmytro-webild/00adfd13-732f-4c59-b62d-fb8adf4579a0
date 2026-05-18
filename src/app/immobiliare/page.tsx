@@ -5,7 +5,7 @@ import ReactLenis from "lenis/react";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import SplitAbout from '@/components/sections/about/SplitAbout';
 import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
-import TimelineProcessFlow from '@/components/cardStack/layouts/timelines/TimelineProcessFlow';
+import TimelineCardStack from '@/components/cardStack/layouts/timelines/TimelineCardStack';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import { BriefcaseBusiness, Users, Search, ClipboardCheck, Handshake, BarChart3, TrendingUp } from 'lucide-react';
 
@@ -74,19 +74,19 @@ Analizziamo ogni opportunità in modo strategico, riducendo il rischio e massimi
         </div>
 
         <div id="processo" data-section="processo">
-          <TimelineProcessFlow
+          <TimelineCardStack
             title="Il nostro processo"
-            description=""
-            textboxLayout="default"
+            textboxLayout="split"
             animationType="slide-up"
-            items={[
-                { content: "Individuiamo opportunità immobiliari con elevato potenziale.", media: <Search />, reverse: false },
-                { content: "Costruiamo l’operazione a livello finanziario e strategico: business plan, ottimizzazione fiscale e strutturazione del capitale.", media: <ClipboardCheck />, reverse: true },
-                { content: "Coordiniamo l’intero processo operativo di progettazione, ristrutturazione o costruzione e gestione dei fornitori.", media: <Handshake />, reverse: false },
-                { content: "Massimizziamo il ritorno dell’investimento attraverso: vendita su carta, frazionamenti e affitti brevi o tradizionali.", media: <BarChart3 />, reverse: true },
-                { content: "Gestiamo operazioni chiavi in mano occupandoci dell’intero processo, con un unico referente e pieno controllo su tempi, costi e risultati.", media: <TrendingUp />, reverse: false },
-            ]}
-          />
+          >
+            <div className="space-y-6">
+                <p>Individuiamo opportunità immobiliari con elevato potenziale.</p>
+                <p>Costruiamo l’operazione a livello finanziario e strategico: business plan, ottimizzazione fiscale e strutturazione del capitale.</p>
+                <p>Coordiniamo l’intero processo operativo di progettazione, ristrutturazione o costruzione e gestione dei fornitori.</p>
+                <p>Massimizziamo il ritorno dell’investimento attraverso: vendita su carta, frazionamenti e affitti brevi o tradizionali.</p>
+                <p>Gestiamo operazioni chiavi in mano occupandoci dell’intero processo, con un unico referente e pieno controllo su tempi, costi e risultati.</p>
+            </div>
+          </TimelineCardStack>
         </div>
 
         <div id="footer" data-section="footer">
