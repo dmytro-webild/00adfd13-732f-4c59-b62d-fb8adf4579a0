@@ -5,7 +5,7 @@ export interface NavItem {
 
 export interface NavbarProps {
     navItems: NavItem[];
-    // logoSrc?: string;
-    // logoAlt?: string;
+    logoSrc?: string;
+    logoAlt?: string;
     brandName?: string;
 }

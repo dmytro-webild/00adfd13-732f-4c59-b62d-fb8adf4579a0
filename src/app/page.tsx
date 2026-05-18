@@ -37,7 +37,8 @@ export default function LandingPage() {
         {
           name: "Contatti",          id: "/#contatti"},
       ]}
-      brandName="SBR Consulting"
+      logoSrc="https://storage.googleapis.com/webild/default/templates/martina/sbr-consulting.webp"
+      logoAlt="SBR Consulting"
     />
   </div>
 
@@ -122,6 +123,7 @@ export default function LandingPage() {
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/modern-high-end-architectural-detail-cle-1777989649870-d9a73473.png?_wi=2"
       mediaAnimation="slide-up"
       inputPlaceholder="Inserisci un contatto telefonico"
+      inputType="tel"
     />
   </div>
 

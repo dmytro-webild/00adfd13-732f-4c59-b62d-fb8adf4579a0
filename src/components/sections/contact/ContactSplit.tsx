@@ -43,9 +43,10 @@ interface ContactSplitProps {
     mediaPosition?: "left" | "right";
     mediaAnimation?: ButtonAnimationType;
     inputPlaceholder?: string;
+    inputType?: "email" | "tel";
     buttonText?: string;
     termsText?: string;
-    onSubmit?: (email: string) => void;
+    onSubmit?: (value: string) => void;
     ariaLabel?: string;
     className?: string;
     containerClassName?: string;
@@ -79,6 +80,7 @@ const ContactSplit = ({
     mediaPosition = "right",
     mediaAnimation = "none",
     inputPlaceholder = "Enter your email",
+    inputType = "email",
     buttonText = "Sign Up",
     termsText = "By clicking Sign Up you're confirming that you agree with our Terms and Conditions.",
     onSubmit,
@@ -101,12 +103,16 @@ const ContactSplit = ({
 }: ContactSplitProps) => {
     const { containerRef: mediaContainerRef } = useButtonAnimation({ animationType: mediaAnimation });
 
-    const handleSubmit = async (email: string) => {
+    const handleSubmit = async (value: string) => {
         try {
-            await sendContactEmail({ email });
-            console.log("Email send successfully");
+            if (inputType === "tel") {
+                await sendContactEmail({ formData: { phone: value } });
+            } else {
+                await sendContactEmail({ email: value });
+            }
+            console.log("Contact form submitted successfully");
         } catch (error) {
-            console.error("Failed to send email:", error);
+            console.error("Failed to submit contact form:", error);
         }
     };
 
@@ -120,6 +126,7 @@ const ContactSplit = ({
                 description={description}
                 useInvertedBackground={useInvertedBackground}
                 inputPlaceholder={inputPlaceholder}
+                inputType={inputType}
                 buttonText={buttonText}
                 termsText={termsText}
                 onSubmit={handleSubmit}

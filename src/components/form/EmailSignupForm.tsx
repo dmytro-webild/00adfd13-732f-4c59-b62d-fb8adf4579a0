@@ -9,7 +9,8 @@ import { useTheme } from "@/providers/themeProvider/ThemeProvider";
 interface EmailSignupFormProps {
     inputPlaceholder?: string;
     buttonText?: string;
-    onSubmit?: (email: string) => void;
+    inputType?: "email" | "tel";
+    onSubmit?: (value: string) => void;
     className?: string;
     inputClassName?: string;
     buttonClassName?: string;
@@ -19,6 +20,7 @@ interface EmailSignupFormProps {
 const EmailSignupForm = ({
     inputPlaceholder = "Enter your email",
     buttonText = "Sign Up",
+    inputType = "email",
     onSubmit,
     className = "",
     inputClassName = "",
@@ -26,13 +28,13 @@ const EmailSignupForm = ({
     buttonTextClassName = "",
 }: EmailSignupFormProps) => {
     const theme = useTheme();
-    const [email, setEmail] = useState("");
+    const [value, setValue] = useState("");
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         if (onSubmit) {
-            onSubmit(email);
-            setEmail("");
+            onSubmit(value);
+            setValue("");
         }
     };
 
@@ -49,16 +51,16 @@ const EmailSignupForm = ({
     return (
         <form onSubmit={handleSubmit} className={cls("relative z-1 flex flex-col md:flex-row gap-3 md:gap-1 w-full card rounded-theme-capped md:rounded-theme p-1", className)}>
             <input
-                type="email"
+                type={inputType}
                 placeholder={inputPlaceholder}
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                value={value}
+                onChange={(e) => setValue(e.target.value)}
                 required
                 className={cls(
                     "flex-1 px-4 text-base text-center md:text-left text-foreground placeholder:text-foreground/75 focus:outline-none focus:border-none truncate",
                     inputClassName
                 )}
-                aria-label="Email address"
+                aria-label={inputType === "tel" ? "Phone number" : "Email address"}
             />
             <Button
                 {...getButtonProps(

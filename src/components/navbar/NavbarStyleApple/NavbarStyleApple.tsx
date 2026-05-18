@@ -23,8 +23,8 @@ interface NavbarStyleAppleProps extends NavbarProps {
 
 const NavbarStyleApple = ({
   navItems,
-  // logoSrc,
-  // logoAlt = "",
+  logoSrc,
+  logoAlt = "",
   brandName = "Webild",
   button,
   buttonClassName = "",
@@ -63,7 +63,7 @@ const NavbarStyleApple = ({
     >
       <div className="relative flex items-center justify-between h-full w-content-width mx-auto">
         <div className="flex items-center transition-all duration-500 ease-in-out">
-          <Logo brandName={brandName} href="/" />
+          <Logo logoSrc={logoSrc} logoAlt={logoAlt} brandName={brandName} href="/" />
         </div>
 
         <div

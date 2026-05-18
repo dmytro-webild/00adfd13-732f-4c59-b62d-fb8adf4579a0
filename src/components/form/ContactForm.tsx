@@ -19,9 +19,10 @@ interface ContactFormProps {
     tagAnimation?: ButtonAnimationType;
     useInvertedBackground: boolean;
     inputPlaceholder?: string;
+    inputType?: "email" | "tel";
     buttonText?: string;
     termsText?: string;
-    onSubmit?: (email: string) => void;
+    onSubmit?: (value: string) => void;
     centered?: boolean;
     className?: string;
     tagClassName?: string;
@@ -43,6 +44,7 @@ const ContactForm = ({
     tagAnimation = "none",
     useInvertedBackground,
     inputPlaceholder = "Enter your email",
+    inputType = "email",
     buttonText = "Sign Up",
     termsText = "By clicking Sign Up you're confirming that you agree with our Terms and Conditions.",
     onSubmit,
@@ -87,6 +89,7 @@ const ContactForm = ({
             <div className={cls("w-full flex flex-col gap-1", formWrapperClassName)}>
                 <EmailSignupForm
                     inputPlaceholder={inputPlaceholder}
+                    inputType={inputType}
                     buttonText={buttonText}
                     onSubmit={onSubmit}
                     className={formClassName}

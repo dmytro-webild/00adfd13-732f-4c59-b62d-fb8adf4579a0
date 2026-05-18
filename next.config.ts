@@ -25,6 +25,10 @@ const nextConfig: NextConfig = {
               protocol: 'https',
               hostname: 'freepik.com',
           },
+          {
+              protocol: 'https',
+              hostname: 'storage.googleapis.com',
+          },
       ],
   }
 };
