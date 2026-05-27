@@ -125,6 +125,27 @@ export default function LandingPage() {
       inputPlaceholder="Inserisci un contatto telefonico"
       inputType="tel"
     />
+    <div className="max-w-[var(--width-content-width)] mx-auto p-8 rounded-lg shadow-md bg-card mt-8 md:mt-12 lg:mt-16">
+        <h3 className="text-xl font-semibold mb-4 text-foreground">Contatti Aziendali</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-foreground/80">
+            <div>
+                <p className="font-medium">Numero di telefono:</p>
+                <p className="text-sm">+39 0123 456789</p>
+            </div>
+            <div>
+                <p className="font-medium">Email aziendale:</p>
+                <p className="text-sm">info@sbrconsulting.it</p>
+            </div>
+            <div>
+                <p className="font-medium">Partita IVA:</p>
+                <p className="text-sm">IT12345678901</p>
+            </div>
+            <div>
+                <p className="font-medium">Sede legale / sede operativa:</p>
+                <p className="text-sm">Via Roma 1, 00100 Roma (RM), Italia</p>
+            </div>
+        </div>
+    </div>
   </div>
 
   <div id="footer" data-section="footer">
