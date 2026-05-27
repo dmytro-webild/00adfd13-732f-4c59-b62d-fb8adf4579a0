@@ -130,7 +130,7 @@ export default function LandingPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-foreground/80">
             <div>
                 <p className="font-medium">Contatti Telefonici:</p>
-                <p className="text-sm">+39 333 839 5032+39 338 145 9478+39 345 800 6014</p>
+                <p className="text-sm">+39 333 839 5032 | +39 338 145 9478 | +39 345 800 6014</p>
             </div>
             <div>
                 <p className="font-medium">Email aziendale:</p>
