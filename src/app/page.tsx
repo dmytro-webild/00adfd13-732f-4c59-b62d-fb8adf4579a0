@@ -126,23 +126,23 @@ export default function LandingPage() {
       inputType="tel"
     />
     <div className="max-w-[var(--width-content-width)] mx-auto p-8 rounded-lg shadow-md bg-card mt-8 md:mt-12 lg:mt-16">
-        <h3 className="text-xl font-semibold mb-4 text-foreground">Contatti Aziendali</h3>
+        <h3 className="text-xl font-semibold mb-4 text-foreground"></h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-foreground/80">
             <div>
-                <p className="font-medium">Numero di telefono:</p>
-                <p className="text-sm">+39 0123 456789</p>
+                <p className="font-medium">Contatti Telefonici:</p>
+                <p className="text-sm">+39 333 839 5032+39 338 145 9478+39 345 800 6014</p>
             </div>
             <div>
                 <p className="font-medium">Email aziendale:</p>
-                <p className="text-sm">info@sbrconsulting.it</p>
+                <p className="text-sm">info@sbr-consulting.com</p>
             </div>
             <div>
                 <p className="font-medium">Partita IVA:</p>
-                <p className="text-sm">IT12345678901</p>
+                <p className="text-sm">13562500960 </p>
             </div>
             <div>
-                <p className="font-medium">Sede legale / sede operativa:</p>
-                <p className="text-sm">Via Roma 1, 00100 Roma (RM), Italia</p>
+                <p className="font-medium">Sede legale:</p>
+                <p className="text-sm">Viale Monte Nero, 84 - 20135 - Milano (MI)</p>
             </div>
         </div>
     </div>
