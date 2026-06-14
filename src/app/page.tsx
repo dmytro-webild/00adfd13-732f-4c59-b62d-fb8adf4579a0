@@ -39,6 +39,8 @@ export default function LandingPage() {
       ]}
       logoSrc="https://storage.googleapis.com/webild/default/templates/martina/sbr-consulting.webp"
       logoAlt="SBR Consulting"
+      ctaButton={{ text: "Richiedi Consulenza", href: "/#contatti" }}
+      buttonSize="lg"
     />
   </div>
 
