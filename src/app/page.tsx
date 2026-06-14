@@ -87,7 +87,7 @@ export default function LandingPage() {
         {
           title: "Advisory Finanziaria per Imprese",          description: "Supportiamo aziende nell’accesso al credito, nella gestione della liquidità e nella strutturazione finanziaria di progetti complessi. Costruiamo soluzioni su misura per crescita e stabilità nel tempo.",          imageSrc: "https://img.b2bpic.net/premium-photo/business-man-black-suit-sitting-working-computer-mobile-phone-man-hands-showing-business-growth-success-result-virtual-chart-diagram-with-future-growing-plan_44289-1322.jpg?id=7348263",          imageAlt: "Gestione"},
         {
-          title: "Gestione Documentale e Processi",          description: "Digitalizziamo e ottimizziamo i flussi documentali legati a pratiche finanziarie e immobiliari, riducendo errori e accelerando le tempistiche operative.",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/tmp/immagine-editoriale-realistica-di-una-pi-1777992368921-ed63f35c.png?_wi=2",          imageAlt: "Compliance"},
+          title: "Gestione Documentale e Processi",          description: "Digitalizziamo e ottimizziamo i flussi documentali legati a pratiche finanziarie e immobiliari, riducendo errori e accelerando le tempistiche operative.",          imageSrc: "https://images.pexels.com/photos/7693696/pexels-photo-7693696.jpeg?auto=compress&cs=tinysrgb&h=650&w=940&id=7693696",          imageAlt: "Compliance"},
       ]}
       title="I nostri Servizi"
       description=""
