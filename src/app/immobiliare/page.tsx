@@ -6,7 +6,7 @@ import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleAp
 import SplitAbout from '@/components/sections/about/SplitAbout';
 import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
 import TimelineProcessFlow from '@/components/cardStack/layouts/timelines/TimelineProcessFlow';
-import FooterBrand from '@/components/sections/footer/FooterBrand';
+import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import { BriefcaseBusiness, Users, Search, ClipboardCheck, Handshake, BarChart3, TrendingUp } from 'lucide-react';
 
 export default function ImmobiliarePage() {
@@ -93,22 +93,23 @@ Analizziamo ogni opportunità in modo strategico, riducendo il rischio e massimi
         </div>
 
         <div id="footer" data-section="footer">
-          <FooterBrand
-            brand="https://storage.googleapis.com/webild/default/templates/martina/sbr-consulting.webp"
+          <FooterBaseReveal
+            logoText="SBR Consulting"
             columns={[
               {
-                items: [
+                title: "Servizi",                items: [
                   { label: "Cessione Credito", href: "/#servizi" },
                   { label: "Consulenza", href: "/#servizi" },
                 ],
               },
               {
-                items: [
+                title: "Azienda",                items: [
                   { label: "Chi Siamo", href: "/#chi-siamo" },
                   { label: "Contatti", href: "/#contatti" },
                 ],
               },
             ]}
+            copyrightText="© 2024 SBR Consulting. Tutti i diritti riservati."
           />
         </div>
       </ReactLenis>
