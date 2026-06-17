@@ -30,7 +30,7 @@ const Logo = ({
 
   if (logoSrc) {
     const imageElement = (
-      <div className={cls("relative h-[calc(var(--text-xl)*1.25)] w-auto", className)}>
+      <div className={cls("relative h-[calc(var(--text-xl)*2)] w-auto", className)}>
         <Image
           src={logoSrc}
           alt={logoAlt}
