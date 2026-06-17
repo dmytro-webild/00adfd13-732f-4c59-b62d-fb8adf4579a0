@@ -81,7 +81,7 @@ export default function LandingPage() {
       title="I nostri Servizi"
       description="Soluzioni finanziarie su misura."
       animationType="none"
-      textboxLayout="left"
+      textboxLayout="center"
       useInvertedBackground={false}
     />
   </div>
@@ -91,7 +91,7 @@ export default function LandingPage() {
         title="Domande frequenti"
         description="Tutto quello che c'è da sapere sui nostri servizi."
         faqsAnimation="none"
-        textboxLayout="left"
+        textboxLayout="center"
         useInvertedBackground={false}
         faqs={[
           {
@@ -112,7 +112,6 @@ export default function LandingPage() {
       title="Ricevi una Consulenza Dedicata"
       description="Un nostro consulente ti richiamerà appena possibile per valutare la soluzione più adatta alle tue esigenze."
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/modern-high-end-architectural-detail-cle-1777989649870-d9a73473.png"
-      background="transparent"
       useInvertedBackground={false}
     />
   </div>
