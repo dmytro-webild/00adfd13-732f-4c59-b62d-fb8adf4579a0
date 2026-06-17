@@ -48,7 +48,7 @@ export default function ImmobiliarePage() {
               { title: "Professionalità", description: "Competenza pluriennale nel settore immobiliare.", icon: Users },
               { title: "Strategia", description: "Piani personalizzati per la valorizzazione del patrimonio.", icon: BriefcaseBusiness }
             ]}
-            textboxLayout="left-aligned"
+            textboxLayout="left"
             useInvertedBackground={false}
           />
         </div>
@@ -58,7 +58,7 @@ export default function ImmobiliarePage() {
             title="Servizi Immobiliari"
             description="Soluzioni avanzate per il mercato immobiliare, progettate per offrire il massimo rendimento in ogni transazione."
             animationType="none"
-            textboxLayout="left-aligned"
+            textboxLayout="left"
             useInvertedBackground={false}
             features={[
               {
@@ -75,7 +75,7 @@ export default function ImmobiliarePage() {
           <TimelineProcessFlow
             title="Il nostro processo"
             description="Il nostro metodo operativo per massimizzare il valore."
-            textboxLayout="left-aligned"
+            textboxLayout="left"
             animationType="none"
             items={[
                 { content: "Individuiamo opportunità immobiliari con elevato potenziale.", media: <Search />, reverse: false },
