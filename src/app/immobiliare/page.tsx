@@ -41,17 +41,15 @@ export default function ImmobiliarePage() {
         <div id="chi-siamo" data-section="chi-siamo">
           <SplitAbout 
             title="Sviluppiamo operazioni immobiliari ad alto rendimento"
-            description="SBR Consulting affianca investitori e proprietari nello sviluppo completo di operazioni immobiliari, con un approccio orientato al risultato.
-Analizziamo ogni opportunità in modo strategico, riducendo il rischio e massimizzando la marginalità."
+            description="SBR Consulting affianca investitori e proprietari nello sviluppo completo di operazioni immobiliari, con un approccio orientato al risultato. Analizziamo ogni opportunità in modo strategico, riducendo il rischio e massimizzando la marginalità."
             tag="About"
             tagIcon={Users}
-            textboxLayout="split"
-            useInvertedBackground={false}
             bulletPoints={[
               { title: "Professionalità", description: "Competenza pluriennale nel settore immobiliare.", icon: Users },
               { title: "Strategia", description: "Piani personalizzati per la valorizzazione del patrimonio.", icon: BriefcaseBusiness }
             ]}
-            ariaLabel="About section"
+            textboxLayout="left"
+            useInvertedBackground={false}
           />
         </div>
 
@@ -59,11 +57,9 @@ Analizziamo ogni opportunità in modo strategico, riducendo il rischio e massimi
           <FeatureCardSeven
             title="Servizi Immobiliari"
             description="Soluzioni avanzate per il mercato immobiliare, progettate per offrire il massimo rendimento in ogni transazione."
-            animationType="slide-up"
-            textboxLayout="split"
-            useInvertedBackground={true}
-            className="bg-[#253259] text-white"
-            cardTitleClassName="text-[#000000]"
+            animationType="none"
+            textboxLayout="left"
+            useInvertedBackground={false}
             features={[
               {
                 title: "Analisi e Selezione Operazioni",                description: "Individuiamo opportunità immobiliari con elevato potenziale, valutando: posizione, mercato, marginalità e rischio.",                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/professional-document-inspection-archite-1777989722562-4aaf17cf.png"
@@ -78,9 +74,9 @@ Analizziamo ogni opportunità in modo strategico, riducendo il rischio e massimi
         <div id="processo" data-section="processo">
           <TimelineProcessFlow
             title="Il nostro processo"
-            description=""
-            textboxLayout="default"
-            animationType="slide-up"
+            description="Il nostro metodo operativo per massimizzare il valore."
+            textboxLayout="left"
+            animationType="none"
             items={[
                 { content: "Individuiamo opportunità immobiliari con elevato potenziale.", media: <Search />, reverse: false },
                 { content: "Costruiamo l’operazione a livello finanziario e strategico: business plan, ottimizzazione fiscale e strutturazione del capitale.", media: <ClipboardCheck />, reverse: true },
