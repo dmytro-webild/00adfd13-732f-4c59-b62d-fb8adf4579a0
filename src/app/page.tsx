@@ -4,7 +4,7 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
-import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
+import FooterBrand from '@/components/sections/footer/FooterBrand';
 import HeroLogo from '@/components/sections/hero/HeroLogo';
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
@@ -151,27 +151,22 @@ export default function LandingPage() {
   </div>
 
   <div id="footer" data-section="footer">
-      <FooterBaseReveal
-      logoText="SBR Consulting"
+      <FooterBrand
+      brand="https://storage.googleapis.com/webild/default/templates/martina/sbr-consulting.webp"
       columns={[
         {
-          title: "Servizi",          items: [
-            {
-              label: "Cessione Credito",              href: "/#servizi"},
-            {
-              label: "Consulenza",              href: "/#servizi"},
+          items: [
+            { label: "Cessione Credito", href: "/#servizi" },
+            { label: "Consulenza", href: "/#servizi" },
           ],
         },
         {
-          title: "Azienda",          items: [
-            {
-              label: "Chi Siamo",              href: "/#chi-siamo"},
-            {
-              label: "Contatti",              href: "/#contatti"},
+          items: [
+            { label: "Chi Siamo", href: "/#chi-siamo" },
+            { label: "Contatti", href: "/#contatti" },
           ],
         },
       ]}
-      copyrightText="© 2024 SBR Consulting. Tutti i diritti riservati."
     />
   </div>
       </ReactLenis>
