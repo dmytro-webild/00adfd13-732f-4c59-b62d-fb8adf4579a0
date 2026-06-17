@@ -2,14 +2,13 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import ContactSplitFormParallax from '@/components/sections/contact/ContactSplitFormParallax';
+import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import HeroLogo from '@/components/sections/hero/HeroLogo';
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import FaqDouble from '@/components/sections/faq/FaqDouble';
-import { Phone, Mail, FileText, MapPin } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -47,14 +46,13 @@ export default function LandingPage() {
       buttons={[
         { text: "Richiedi una Consulenza Gratuita", href: "/#contatti" },
       ]}
-      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/modern-high-end-architectural-detail-cle-1777989649870-d9a73473.png?_wi=1"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/modern-high-end-architectural-detail-cle-1777989649870-d9a73473.png"
       imageAlt="Ufficio SBR Consulting"
     />
   </div>
 
   <div id="chi-siamo" data-section="chi-siamo">
       <MetricSplitMediaAbout
-      useInvertedBackground={false}
       title="Esperienza e Autorevolezza"
       description="SBR Consulting nasce con la missione di guidare i propri clienti in un mercato finanziario complesso. Ogni nostra operazione è finalizzata al massimo ritorno e alla sicurezza patrimoniale."
       metrics={[
@@ -63,38 +61,28 @@ export default function LandingPage() {
         { value: "98%", title: "Clienti soddisfatti" },
       ]}
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/uploaded-1778067524001-asxczrhy.png"
-      mediaAnimation="slide-up"
-      metricsAnimation="slide-up"
+      useInvertedBackground={false}
     />
   </div>
 
   <div id="servizi" data-section="servizi">
       <FeatureCardSeven
-      animationType="slide-up"
-      textboxLayout="split"
-      useInvertedBackground={false}
       features={[
         {
-          title: "Cessione del Credito", 
-          description: "Gestiamo l’intero processo di cessione del credito per imprese edili e professionisti, dalla raccolta documentale alla finalizzazione con partner finanziari. Ottimizziamo tempi, margini e sicurezza dell’operazione.", 
-          imageSrc: "https://img.b2bpic.net/premium-photo/hands-finance-business-people-meeting-teamwork-investment-profit-report-paperwork-financial-laptop-budget-analyst-with-economist-feedback-planning-project-corporate_590464-441315.jpg?id=359411588", 
-          imageAlt: "Analisi"
+          title: "Cessione del Credito",          description: "Gestiamo l’intero processo di cessione del credito per imprese edili e professionisti, dalla raccolta documentale alla finalizzazione con partner finanziari. Ottimizziamo tempi, margini e sicurezza dell’operazione.",          imageSrc: "https://img.b2bpic.net/premium-photo/hands-finance-business-people-meeting-teamwork-investment-profit-report-paperwork-financial-laptop-budget-analyst-with-economist-feedback-planning-project-corporate_590464-441315.jpg"
         },
         {
-          title: "Advisory Finanziaria per Imprese", 
-          description: "Supportiamo aziende nell’accesso al credito, nella gestione della liquidità e nella strutturazione finanziaria di progetti complessi. Costruiamo soluzioni su misura per crescita e stabilità nel tempo.", 
-          imageSrc: "https://img.b2bpic.net/premium-photo/business-man-black-suit-sitting-working-computer-mobile-phone-man-hands-showing-business-growth-success-result-virtual-chart-diagram-with-future-growing-plan_44289-1322.jpg?id=7348263", 
-          imageAlt: "Gestione"
+          title: "Advisory Finanziaria per Imprese",          description: "Supportiamo aziende nell’accesso al credito, nella gestione della liquidità e nella strutturazione finanziaria di progetti complessi. Costruiamo soluzioni su misura per crescita e stabilità nel tempo.",          imageSrc: "https://img.b2bpic.net/premium-photo/business-man-black-suit-sitting-working-computer-mobile-phone-man-hands-showing-business-growth-success-result-virtual-chart-diagram-with-future-growing-plan_44289-1322.jpg"
         },
         {
-          title: "Gestione Documentale e Processi", 
-          description: "Digitalizziamo e ottimizziamo i flussi documentali legati a pratiche finanziarie e immobiliari, riducendo errori e accelerando le tempistiche operative.", 
-          imageSrc: "https://images.pexels.com/photos/7698796/pexels-photo-7698796.jpeg?auto=compress&cs=tinysrgb&h=650&w=940&id=7698796", 
-          imageAlt: "Compliance"
+          title: "Gestione Documentale e Processi",          description: "Digitalizziamo e ottimizziamo i flussi documentali legati a pratiche finanziarie e immobiliari, riducendo errori e accelerando le tempistiche operative.",          imageSrc: "https://images.pexels.com/photos/7698796/pexels-photo-7698796.jpeg"
         },
       ]}
       title="I nostri Servizi"
-      description=""
+      description="Soluzioni finanziarie su misura."
+      animationType="none"
+      textboxLayout="left"
+      useInvertedBackground={false}
     />
   </div>
 
@@ -102,36 +90,31 @@ export default function LandingPage() {
       <FaqDouble
         title="Domande frequenti"
         description="Tutto quello che c'è da sapere sui nostri servizi."
-        faqsAnimation="slide-up"
-        textboxLayout="default"
+        faqsAnimation="none"
+        textboxLayout="left"
         useInvertedBackground={false}
         faqs={[
-          { id: "1", title: "A chi si rivolge SBR Consulting?", content: "Ci rivolgiamo a imprese edili, investitori immobiliari e aziende che necessitano di supporto nella gestione finanziaria o nello sviluppo di operazioni complesse." },
-          { id: "3", title: "Gestite anche tutta la parte burocratica?", content: "Sì, seguiamo l’intero processo: dalla raccolta documentale fino alla chiusura dell’operazione, riducendo il carico operativo per il cliente." },
-          { id: "2", title: "In quanto tempo si conclude una cessione del credito?", content: "Le tempistiche variano in base alla complessità della pratica, ma grazie ai nostri partner riduciamo significativamente i tempi rispetto alla media di mercato." },
-          { id: "4", title: "Offrite una valutazione preliminare della pratica?", content: "Sì, analizziamo gratuitamente la documentazione disponibile e la situazione del credito per verificare la fattibilità dell’operazione, individuare eventuali criticità e proporre il percorso più adatto al cliente." }
+          {
+            id: "1", title: "A chi si rivolge SBR Consulting?", content: "Ci rivolgiamo a imprese edili, investitori immobiliari e aziende che necessitano di supporto nella gestione finanziaria o nello sviluppo di operazioni complesse."},
+          {
+            id: "3", title: "Gestite anche tutta la parte burocratica?", content: "Sì, seguiamo l’intero processo: dalla raccolta documentale fino alla chiusura dell’operazione, riducendo il carico operativo per il cliente."},
+          {
+            id: "2", title: "In quanto tempo si conclude una cessione del credito?", content: "Le tempistiche variano in base alla complessità della pratica, ma grazie ai nostri partner riduciamo significativamente i tempi rispetto alla media di mercato."},
+          {
+            id: "4", title: "Offrite una valutazione preliminare della pratica?", content: "Sì, analizziamo gratuitamente la documentazione disponibile e la situazione del credito per verificare la fattibilità dell’operazione, individuare eventuali criticità e proporre il percorso più adatto al cliente."}
         ]}
       />
   </div>
 
   <div id="contatti" data-section="contatti">
-      <ContactSplitFormParallax
-        tag="Contatti"
-        title="Ricevi una Consulenza Dedicata"
-        description="Un nostro consulente ti richiamerà appena possibile per valutare la soluzione più adatta alle tue esigenze professionali."
-        inputs={[
-            { name: "name", type: "text", placeholder: "Nome e Cognome", required: true },
-            { name: "phone", type: "tel", placeholder: "Numero di Telefono", required: true }
-        ]}
-        buttonText="Invia Richiesta"
-        ctaLinks={[
-            { icon: Phone, label: "+39 333 839 5032", href: "tel:+393338395032" },
-            { icon: Mail, label: "info@sbr-consulting.com", href: "mailto:info@sbr-consulting.com" },
-            { icon: FileText, label: "P.IVA: 13562500960" },
-            { icon: MapPin, label: "Viale Monte Nero, 84 - Milano" }
-        ]}
-        imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/modern-high-end-architectural-detail-cle-1777989649870-d9a73473.png?_wi=2"
-      />
+      <ContactSplit
+      tag="Contatti"
+      title="Ricevi una Consulenza Dedicata"
+      description="Un nostro consulente ti richiamerà appena possibile per valutare la soluzione più adatta alle tue esigenze."
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/modern-high-end-architectural-detail-cle-1777989649870-d9a73473.png"
+      useInvertedBackground={false}
+      background={{ variant: "plain" }}
+    />
   </div>
 
   <div id="footer" data-section="footer">
@@ -139,15 +122,13 @@ export default function LandingPage() {
       logoText="SBR Consulting"
       columns={[
         {
-          title: "Servizi", 
-          items: [
+          title: "Servizi", items: [
             { label: "Cessione Credito", href: "/#servizi" },
             { label: "Consulenza", href: "/#servizi" },
           ],
         },
         {
-          title: "Azienda", 
-          items: [
+          title: "Azienda", items: [
             { label: "Chi Siamo", href: "/#chi-siamo" },
             { label: "Contatti", href: "/#contatti" },
           ],
