@@ -35,7 +35,7 @@ export default function LandingPage() {
       ]}
       logoSrc="https://storage.googleapis.com/webild/default/templates/martina/sbr-consulting.webp"
       logoAlt="SBR Consulting"
-      ctaButton={{ text: "Richiedi Consulenza", href: "/#contatti" }}
+      button={{ text: "Richiedi Consulenza", href: "/#contatti" }}
     />
   </div>
 
@@ -61,6 +61,7 @@ export default function LandingPage() {
         { value: "98%", title: "Clienti soddisfatti" },
       ]}
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/uploaded-1778067524001-asxczrhy.png"
+      useInvertedBackground={false}
     />
   </div>
 
@@ -78,6 +79,10 @@ export default function LandingPage() {
         },
       ]}
       title="I nostri Servizi"
+      description="Soluzioni finanziarie su misura."
+      animationType="none"
+      textboxLayout="left"
+      useInvertedBackground={false}
     />
   </div>
 
@@ -85,6 +90,9 @@ export default function LandingPage() {
       <FaqDouble
         title="Domande frequenti"
         description="Tutto quello che c'è da sapere sui nostri servizi."
+        faqsAnimation="none"
+        textboxLayout="left"
+        useInvertedBackground={false}
         faqs={[
           {
             id: "1", title: "A chi si rivolge SBR Consulting?", content: "Ci rivolgiamo a imprese edili, investitori immobiliari e aziende che necessitano di supporto nella gestione finanziaria o nello sviluppo di operazioni complesse."},
@@ -104,6 +112,8 @@ export default function LandingPage() {
       title="Ricevi una Consulenza Dedicata"
       description="Un nostro consulente ti richiamerà appena possibile per valutare la soluzione più adatta alle tue esigenze."
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/modern-high-end-architectural-detail-cle-1777989649870-d9a73473.png"
+      background="transparent"
+      useInvertedBackground={false}
     />
   </div>
 
