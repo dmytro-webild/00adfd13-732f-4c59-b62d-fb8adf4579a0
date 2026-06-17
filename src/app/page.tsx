@@ -81,7 +81,7 @@ export default function LandingPage() {
       title="I nostri Servizi"
       description="Soluzioni finanziarie su misura."
       animationType="none"
-      textboxLayout="left"
+      textboxLayout="center"
       useInvertedBackground={false}
     />
   </div>
@@ -91,7 +91,7 @@ export default function LandingPage() {
         title="Domande frequenti"
         description="Tutto quello che c'è da sapere sui nostri servizi."
         faqsAnimation="none"
-        textboxLayout="left"
+        textboxLayout="center"
         useInvertedBackground={false}
         faqs={[
           {
