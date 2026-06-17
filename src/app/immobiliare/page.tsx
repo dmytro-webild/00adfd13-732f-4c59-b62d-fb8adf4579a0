@@ -34,7 +34,7 @@ export default function ImmobiliarePage() {
             ]}
             logoSrc="https://storage.googleapis.com/webild/default/templates/martina/sbr-consulting.webp"
             logoAlt="SBR Consulting"
-            ctaButton={{ text: "Richiedi Consulenza", href: "/#contatti" }}
+            button={{ text: "Richiedi Consulenza", href: "/#contatti" }}
           />
         </div>
 
@@ -48,6 +48,8 @@ export default function ImmobiliarePage() {
               { title: "Professionalità", description: "Competenza pluriennale nel settore immobiliare.", icon: Users },
               { title: "Strategia", description: "Piani personalizzati per la valorizzazione del patrimonio.", icon: BriefcaseBusiness }
             ]}
+            textboxLayout="left"
+            useInvertedBackground={false}
           />
         </div>
 
@@ -55,6 +57,9 @@ export default function ImmobiliarePage() {
           <FeatureCardSeven
             title="Servizi Immobiliari"
             description="Soluzioni avanzate per il mercato immobiliare, progettate per offrire il massimo rendimento in ogni transazione."
+            animationType="none"
+            textboxLayout="left"
+            useInvertedBackground={false}
             features={[
               {
                 title: "Analisi e Selezione Operazioni",                description: "Individuiamo opportunità immobiliari con elevato potenziale, valutando: posizione, mercato, marginalità e rischio.",                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3D4KC0FsaA7ldxeqCrwzWFE7quv/professional-document-inspection-archite-1777989722562-4aaf17cf.png"
@@ -69,6 +74,9 @@ export default function ImmobiliarePage() {
         <div id="processo" data-section="processo">
           <TimelineProcessFlow
             title="Il nostro processo"
+            description="Il nostro metodo operativo per massimizzare il valore."
+            textboxLayout="left"
+            animationType="none"
             items={[
                 { content: "Individuiamo opportunità immobiliari con elevato potenziale.", media: <Search />, reverse: false },
                 { content: "Costruiamo l’operazione a livello finanziario e strategico: business plan, ottimizzazione fiscale e strutturazione del capitale.", media: <ClipboardCheck />, reverse: true },
